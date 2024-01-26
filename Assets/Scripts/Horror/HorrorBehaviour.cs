@@ -20,6 +20,8 @@ public class HorrorBehaviour : MonoBehaviour
     [Tooltip("The List of eyes the monster has (directly connected to health)")]
     [SerializeField] private List<GameObject> _eyes;
 
+    [Tooltip("How fast the object moves ")]
+    [SerializeField] private float _speed;
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -28,17 +30,11 @@ public class HorrorBehaviour : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void FixedUpdate()
     {
         if(transform.position !=_positionNodes[_currentPosition])
         {
-
+            transform.position = Vector3.MoveTowards(transform.position, _positionNodes[_currentPosition],_speed);
         }
     }
 
@@ -47,7 +43,7 @@ public class HorrorBehaviour : MonoBehaviour
         _health--;
         if(_health <= 0)
         {
-
+            //WIN condition
         }
     }
 
@@ -56,12 +52,35 @@ public class HorrorBehaviour : MonoBehaviour
 
     public void MoveForward()
     {
-
+        _currentPosition++;
+        //Win Condition
+        if(_currentPosition == _positionNodes.Count)
+        {
+            //LOSE conditions
+        }
     }
-
+     
     public void MoveBackward()
     {
+        _currentPosition--;
+        if(_currentPosition < 0)
+        {
+            _currentPosition = 0;
+        }
+    }
 
+    public void StartLaunch()
+    {
+        LaunchIntoSpace();
+    }
+
+    private IEnumerator LaunchIntoSpace()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(.1f);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(0f,2000000f,0f), _speed);
+        }
     }
     #endregion 
 }
