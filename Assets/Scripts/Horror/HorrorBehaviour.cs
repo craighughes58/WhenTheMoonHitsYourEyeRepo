@@ -7,10 +7,15 @@ public class HorrorBehaviour : MonoBehaviour
     #region Private Variables
     //how much damage the monster can take
     private int _health;
+
+    //The current position of the horror in the array
+    private int _currentPosition;
+
+    
     #endregion
     #region Serialized Variables
     [Tooltip("The position that the monster will move to and from")]
-    [SerializeField] private List<Transform> _positionNodes;
+    [SerializeField] private List<Vector3> _positionNodes;
 
     [Tooltip("The List of eyes the monster has (directly connected to health)")]
     [SerializeField] private List<GameObject> _eyes;
@@ -19,6 +24,7 @@ public class HorrorBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _currentPosition = _positionNodes.Count;
         
     }
 
@@ -26,6 +32,14 @@ public class HorrorBehaviour : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void FixedUpdate()
+    {
+        if(transform.position !=_positionNodes[_currentPosition])
+        {
+
+        }
     }
 
     public void LoseEye()
@@ -36,4 +50,18 @@ public class HorrorBehaviour : MonoBehaviour
 
         }
     }
+
+    #region Movement
+
+
+    public void MoveForward()
+    {
+
+    }
+
+    public void MoveBackward()
+    {
+
+    }
+    #endregion 
 }
