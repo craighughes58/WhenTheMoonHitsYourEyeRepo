@@ -91,5 +91,24 @@ public class HorrorBehaviour : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(0f,2000000f,0f), _speed);
         }
     }
-    #endregion 
+    #endregion
+
+    #region Getters and Setters
+
+    public int GetHealth()
+    {
+        return _health;
+    }
+
+    public Vector3 GetCurrentPosition()
+    {
+        return _positionNodes[_currentPosition];
+    }
+
+    public int GetIndex()
+    {
+        return _currentPosition;
+    }
+
+    #endregion
 }
