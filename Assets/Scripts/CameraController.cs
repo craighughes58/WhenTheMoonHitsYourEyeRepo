@@ -35,8 +35,8 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _targetPosition = transform.position;
-        _lastPositon = transform.position;
+/*        _targetPosition = transform.position;
+        _lastPositon = transform.position;*/
     }
 
     private void FixedUpdate()

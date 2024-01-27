@@ -13,18 +13,6 @@ public class GameController : MonoBehaviour
     #endregion
     #region Serialized Variables
 
-    public Star[] starTypes;
-
-    public GameObject horror;
-    public GameObject moon;
-
-    public GameObject gameSpace;
-
-    public Vector2 upperRightCorner;
-    public Vector2 lowerLeftCorner;
-
-    public float moonOffset = 5;
-    public float starCount = 30;
 
     [SerializeField] Animator playerAnimator;
 
@@ -75,7 +63,7 @@ public class GameController : MonoBehaviour
     */
     void Start()
     {
-
+        StartCoroutine(ExecuteCoreLoop());
     }
 
     private IEnumerator ExecuteCoreLoop()
@@ -84,11 +72,12 @@ public class GameController : MonoBehaviour
         //show horror
         CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
         //wait
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 4f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
         if (_failedCast)
         {
             //wait
             HorrorBehaviour.Instance.MoveForward();
+            CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
             _failedCast = false;
         }
         else if (_successfulCast)
@@ -98,6 +87,8 @@ public class GameController : MonoBehaviour
         }
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //horror does roar
+        //shake the screen
+        ScreenShaker.shakeDuration = 3f;
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //pan to show player
@@ -117,23 +108,7 @@ public class GameController : MonoBehaviour
     }
 
 
-    /*    public void SpawnStars() 
-        {
-            //get random positions
 
-            for(int i = 0; i < starCount; i++)
-            {
-                int starToSpawn = Random.RandomRange(0, starTypes.Length);
-
-                float spawnX = Random.RandomRange(lowerLeftCorner.x, upperRightCorner.x);
-                float spawnY = Random.RandomRange(lowerLeftCorner.y, upperRightCorner.y);
-
-
-                Vector2 spawnPos = new Vector2(spawnX, spawnY);
-
-                Instantiate(starTypes[starToSpawn], spawnPos, Quaternion.identity);
-            }
-        }*/
 
 
     #region End Conditions
