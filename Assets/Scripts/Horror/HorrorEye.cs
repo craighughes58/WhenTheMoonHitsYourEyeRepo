@@ -12,19 +12,24 @@ public class HorrorEye : MonoBehaviour, IHookable
     #region Private Variable
     //
     private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
     #endregion
 
 
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
+
     }
 
     public void Hook(BobberManager boober)
     {
         if(_spriteRenderer.sprite != _closed)
         {
-            _spriteRenderer.sprite = _closed;
+            _animator.SetBool("isHurt", true);
+            //_spriteRenderer.sprite = _closed;
+            
             HorrorBehaviour.Instance.LoseEye();
         }
     }
