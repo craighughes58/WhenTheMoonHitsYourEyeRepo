@@ -16,20 +16,7 @@ public class HorrorBehaviour : MonoBehaviour
     [SerializeField] private AudioClip _roar;
     [Tooltip("The sound the horror makes when it gets hit")]
     [SerializeField] private AudioClip _hit;
-    #endregion
-    public static HorrorBehaviour Instance;
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-    }
-
-
-
-    #region Serialized Variables
     [Tooltip("The position that the monster will move to and from")]
     [SerializeField] private List<Vector3> _positionNodes;
 
@@ -39,10 +26,22 @@ public class HorrorBehaviour : MonoBehaviour
     [Tooltip("How fast the object moves ")]
     [SerializeField] private float _speed;
     #endregion
+    public static HorrorBehaviour Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        } 
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
         _currentPosition = 0;
+        _health = _eyes.Count;
     }
 
 
@@ -63,7 +62,10 @@ public class HorrorBehaviour : MonoBehaviour
         {
             GameController.Instance.WinGame();
             //WIN condition
+            Debug.LogWarning("You should be winning the game here, but it's not implemented");
+            return;
         }
+        GameController.Instance.NotifyCastSuccess();
     }
 
     public void ActivateRoar()

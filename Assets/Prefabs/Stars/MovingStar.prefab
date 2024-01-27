@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8439f11d13da42549b4926d83654e448, type: 3}
       propertyPath: m_Name
-      value: NormalStar
+      value: MovingStar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80,7 +80,10 @@ PrefabInstance:
       addedObject: {fileID: 6158874658218335925}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8439f11d13da42549b4926d83654e448, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6690358026449693105}
+      addedObject: {fileID: -2781691486756630960}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8439f11d13da42549b4926d83654e448, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -593383833693069417}
   m_SourcePrefab: {fileID: 100100000, guid: 8439f11d13da42549b4926d83654e448, type: 3}
 --- !u!1 &1053934326826292768 stripped
 GameObject:
@@ -143,7 +146,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.025360687
---- !u!114 &6690358026449693105
+--- !u!114 &-2781691486756630960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,9 +155,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053934326826292768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f8dc5f684299c84db5db1b3e424d0d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 9050e97e8643cfc4d95ed1199de93f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: NormalStar
+  Name: Moving Star
   starRadius: 0.5
   gc: {fileID: 0}
+  speed: 4
+  destination: {fileID: 0}
+  _maximumMovementRange: 2
+  travelPoints: []
+  platrb: {fileID: 0}
+  moving: 1
+--- !u!50 &-593383833693069417
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053934326826292768}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _starPrefabs:
-  - {fileID: 1669109164851246548, guid: 52a03c686b03b1347a111edea9b92f15, type: 3}
-  - {fileID: 2075886989464490369, guid: 80b887583b2f11044908a23752a4f279, type: 3}
-  - {fileID: 4854391943711144557, guid: eb421256ad9e9614eb496db6d6051dd6, type: 3}
+  - {fileID: 1053934326826292768, guid: 4c7ec130d64f28e47a6e3ea849b49437, type: 3}
+  - {fileID: 1087799100361126023, guid: 5bc037928235e8c479b10809211c4b64, type: 3}
+  - {fileID: 3176544525561250636, guid: fe282761943d6114e964ec09e437cd72, type: 3}
 --- !u!58 &56602992833383144
 CircleCollider2D:
   m_ObjectHideFlags: 0

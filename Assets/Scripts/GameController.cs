@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour
 
 
     [Header("CAMERA POSITIONS")]
-    [SerializeField] private Vector3 _winPosition;
     [SerializeField] private Vector3 _lossPosition;
     [SerializeField] private Vector3 _castingPosition;
     [SerializeField] private bool _playStartingAnimation;
@@ -123,12 +122,9 @@ public class GameController : MonoBehaviour
         CastController.Instance.OnFire(null);
         //WAIT UNTIL FAILURE
         yield return new WaitUntil(() => _failedCast || _successfulCast);
-        print("1");
-        playerAnimator.SetTrigger("Recall");
+        playerAnimator.SetTrigger("Idle");
         CameraController.Instance.UpdatePosition(_castingPosition, false);
-        print("2");
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 1f);
-        print("3");
         Destroy(_currentPlayer);
         onRoundEnd?.Invoke();
 
@@ -149,7 +145,7 @@ public class GameController : MonoBehaviour
     private IEnumerator WinningCoroutine()
     {
         //Move Camera to Win Position
-        CameraController.Instance.UpdatePosition(_winPosition,false);
+        CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition(),false);
         //wait 
         yield return new WaitForSeconds(10f);
         //Launch horror away

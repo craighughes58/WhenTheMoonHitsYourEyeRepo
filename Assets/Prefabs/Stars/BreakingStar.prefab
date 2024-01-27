@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f411503fdf10c2d46ac7f53cc1402fff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f411503fdf10c2d46ac7f53cc1402fff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f411503fdf10c2d46ac7f53cc1402fff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f411503fdf10c2d46ac7f53cc1402fff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.7918825
       objectReference: {fileID: 0}
@@ -50,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f411503fdf10c2d46ac7f53cc1402fff, type: 3}
       propertyPath: m_Name
-      value: BreakingStar 1
+      value: BreakingStar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -139,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc47f81e046af3469f2b467a230cb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: StarName
-  starRadius: 1
+  Name: Breaking Star
+  starRadius: 0.5
   gc: {fileID: 0}
   timeBeforeCrumble: 3
   _particles: {fileID: 0}
