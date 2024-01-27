@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c9b66686a00ab44aad5ee9cf43ea16a
+guid: f6e614ae1b6e54241acd243e9d384db6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpaceCat-Sheet-export_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.49999997, y: 0.45507646}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de5e63d6a85d652409e2f4ef5c780781
-      internalID: 1580434318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpaceCat-Sheet-export_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2a55b24675a8944ba5e522973669c08
-      internalID: -1425544863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpaceCat-Sheet-export_2
+      name: space cat fishing-export_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
+      pivot: {x: 0.6582278, y: 0.2296941}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80e6b6b588652042ab2cc2205c31686
-      internalID: -1451205012
+      spriteID: 77acd772e17c63443a7c40b512355b94
+      internalID: 453999659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceCat-Sheet-export_3
+      name: space cat fishing-export_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
+      pivot: {x: 0.6582278, y: 0.2296941}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe7857f33944862429267d5ffbf296fd
-      internalID: -2114635579
+      spriteID: fdc29786c5c367d469a952e025c21cda
+      internalID: 1372448643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db39c6f6e03b9554fa61841cd7a8a33e
+      internalID: 259578953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8e207f7fbd62744a0dc2e45a79c3fc
+      internalID: 465464610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fb1d03df257b34a9671b7845659ed0
+      internalID: 2117441122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4212f46a048b448687e252590f3ee
+      internalID: -615878008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6beaba00487bfe449beddb48d4391aa6
+      internalID: 1025099906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a3750da8706f941ada9803cf384538
+      internalID: 158363474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95963abf05e3f5b48bb58eaa8b2d49e7
+      internalID: -1434975379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space cat fishing-export_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6582278, y: 0.2296941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cd4abe8d4c87b4aafd4f313bfcbd7f
+      internalID: -1532682906
       vertices: []
       indices: 
       edges: []
@@ -217,10 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpaceCat-Sheet-export_0: 1580434318
-      SpaceCat-Sheet-export_1: -1425544863
-      SpaceCat-Sheet-export_2: -1451205012
-      SpaceCat-Sheet-export_3: -2114635579
+      space cat fishing-export_0: 453999659
+      space cat fishing-export_1: 1372448643
+      space cat fishing-export_2: 259578953
+      space cat fishing-export_3: 465464610
+      space cat fishing-export_4: 2117441122
+      space cat fishing-export_5: -615878008
+      space cat fishing-export_6: 1025099906
+      space cat fishing-export_7: 158363474
+      space cat fishing-export_8: -1434975379
+      space cat fishing-export_9: -1532682906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
