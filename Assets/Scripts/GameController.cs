@@ -84,7 +84,8 @@ public class GameController : MonoBehaviour
     bool TrySpawnStar()
     {
         Vector2 starPos = new Vector2(Random.Range(_xMinandMax.x, _xMinandMax.y), Random.Range(_yMinandMax.x, _yMinandMax.y));
-        if(Physics2D.CircleCast(starPos, _minStarDist, Vector2.zero)) return false;
+        RaycastHit2D hit = Physics2D.CircleCast(starPos, _minStarDist, Vector2.zero);
+        if (hit.transform != null) return false;
 
         Instantiate(_starNode, starPos, Quaternion.identity);
 
