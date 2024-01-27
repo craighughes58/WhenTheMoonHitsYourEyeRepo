@@ -16,8 +16,12 @@ public class GameController : MonoBehaviour
 
     [SerializeField] Animator playerAnimator;
 
-    [Tooltip("The ")]
+    [Tooltip("")]
     [SerializeField] private float _endingDelay;
+
+    [Tooltip("The sound made when the bobber fails")]
+    [SerializeField] private AudioClip _failedCastSound;
+
 
     [Header("CAMERA POSITIONS")]
     [SerializeField] private Vector3 _winPosition;
@@ -91,8 +95,9 @@ public class GameController : MonoBehaviour
             }
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
             //horror does roar
+            HorrorBehaviour.Instance.ActivateRoar();
             //shake the screen
-            ScreenShaker.shakeDuration = 3f;
+            ScreenShaker.shakeDuration = 2.5f;
             //wait
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         }
@@ -171,6 +176,7 @@ public class GameController : MonoBehaviour
 
     public void NotifyCastFailure()
     {
+        AudioManager.Instance.PlayClip2D(_failedCastSound);
         _failedCast = true;
     }
     public void NotifyCastSuccess()

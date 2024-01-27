@@ -621,6 +621,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2086777079}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950006504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950006506}
+  - component: {fileID: 950006505}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &950006505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950006504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad885cdacb21094c8f850675c569767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source2D: {fileID: 1492500649616119237, guid: 4b5c83f634172dd489b8be335fa6d870, type: 3}
+--- !u!4 &950006506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950006504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -192.40671, y: 208.45795, z: -0.0017338919}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973044348
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 1617309200}
   _endingDelay: 5
+  _failedCastSound: {fileID: 8300000, guid: 82e24e1cb539b4e478eb1d4549f64c9b, type: 3}
   _winPosition: {x: 0, y: 600, z: -10}
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
@@ -1329,6 +1375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c6ab73e7591ce4481ba56d7265790d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _roar: {fileID: 8300000, guid: fcb32d4572a6e0f4eb1eceb0e44b8d01, type: 3}
+  _hit: {fileID: 8300000, guid: 470dcf6655e033c4286aefae2edada8d, type: 3}
   _positionNodes:
   - {x: 0, y: 600, z: 0}
   - {x: 0, y: 400, z: 0}
@@ -1748,3 +1796,4 @@ SceneRoots:
   - {fileID: 1165854935}
   - {fileID: 2009036463}
   - {fileID: 1139497338}
+  - {fileID: 950006506}

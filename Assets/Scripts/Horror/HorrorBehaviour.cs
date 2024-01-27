@@ -10,7 +10,13 @@ public class HorrorBehaviour : MonoBehaviour
 
     //The current position of the horror in the array
     private int _currentPosition;
-
+    #endregion
+    #region Serialized Variables
+    [Tooltip("The sound the horror makes when it moves forward")]
+    [SerializeField] private AudioClip _roar;
+    [Tooltip("The sound the horror makes when it gets hit")]
+    [SerializeField] private AudioClip _hit;
+    #endregion
     public static HorrorBehaviour Instance;
 
     private void Awake()
@@ -22,7 +28,7 @@ public class HorrorBehaviour : MonoBehaviour
     }
 
 
-    #endregion
+
     #region Serialized Variables
     [Tooltip("The position that the monster will move to and from")]
     [SerializeField] private List<Vector3> _positionNodes;
@@ -52,10 +58,17 @@ public class HorrorBehaviour : MonoBehaviour
     public void LoseEye()
     {
         _health--;
-        if(_health <= 0)
+        AudioManager.Instance.PlayClip2D(_hit);
+        if (_health <= 0)
         {
+            GameController.Instance.WinGame();
             //WIN condition
         }
+    }
+
+    public void ActivateRoar()
+    {
+        AudioManager.Instance.PlayClip2D(_roar);
     }
 
     #region Movement
@@ -64,9 +77,11 @@ public class HorrorBehaviour : MonoBehaviour
     public void MoveForward()
     {
         _currentPosition++;
+
         //Win Condition
-        if(_currentPosition == _positionNodes.Count)
+        if (_currentPosition == _positionNodes.Count)
         {
+            GameController.Instance.LoseGame();
             //LOSE conditions
         }
     }
@@ -82,6 +97,7 @@ public class HorrorBehaviour : MonoBehaviour
 
     public void StartLaunch()
     {
+        AudioManager.Instance.PlayClip2D(_roar);
         LaunchIntoSpace();
     }
 
