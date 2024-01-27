@@ -47,12 +47,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starTypes:
   - {fileID: 4740706194287104118, guid: c1d81824ba6cd244085665770288b00f, type: 3}
-  - {fileID: 4740706194287104118, guid: 2870d53ea40ddb94799d8ccf2517850d, type: 3}
+  - {fileID: 3290738532059601334, guid: 2870d53ea40ddb94799d8ccf2517850d, type: 3}
+  - {fileID: 610714730048235520, guid: 42e264f4d020ee54dad001638bbd87fe, type: 3}
   horror: {fileID: 3796108041414954215, guid: 693182589f6b8c24ea7f721a52c86a87, type: 3}
-  moon: {fileID: 0}
+  moon: {fileID: 8483516668158322674, guid: bc37e864797729349933fc5471f5498c, type: 3}
   gameSpace: {fileID: 7120146788100524325}
   upperRightCorner: {x: 0, y: 0}
   lowerLeftCorner: {x: 0, y: 0}
+  moonOffset: 5
+  starCount: 30
 --- !u!1 &7120146788100524325
 GameObject:
   m_ObjectHideFlags: 0

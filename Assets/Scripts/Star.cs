@@ -8,4 +8,8 @@ public class Star : MonoBehaviour
 {
     public string Name = "StarName";
 
+    public void caughtByPlayer()
+    {
+
+    }
 }

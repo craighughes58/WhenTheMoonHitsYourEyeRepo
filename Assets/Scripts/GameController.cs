@@ -35,6 +35,16 @@ public class GameController : MonoBehaviour
             Instance = this;
         }
 
+        float bottomLoc = NewMethod();
+
+        Instantiate(moon, new Vector2(0, bottomLoc - 5), Quaternion.identity);
+
+        SpawnStars();
+
+    }
+
+    private float NewMethod()
+    {
         float sizeX = gameSpace.GetComponent<BoxCollider2D>().size.x;
         float sizeY = gameSpace.GetComponent<BoxCollider2D>().size.y;
 
@@ -44,14 +54,8 @@ public class GameController : MonoBehaviour
         float bottomLoc = -sizeY / 2;
 
         upperRightCorner = new Vector2(rightLoc, topLoc);
-        lowerLeftCorner= new Vector2(leftLoc, bottomLoc);
-
-        Instantiate(moon, new Vector2(0, bottomLoc - 5), Quaternion.identity);
-
-        SpawnStars();
-
-
-
+        lowerLeftCorner = new Vector2(leftLoc, bottomLoc);
+        return bottomLoc;
     }
 
     void Start()
@@ -79,7 +83,6 @@ public class GameController : MonoBehaviour
             Vector2 spawnPos = new Vector2(spawnX, spawnY);
 
             Instantiate(starTypes[starToSpawn], spawnPos, Quaternion.identity);
-
         }
     }
 
