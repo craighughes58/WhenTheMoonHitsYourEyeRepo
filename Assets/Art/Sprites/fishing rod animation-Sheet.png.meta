@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c9b66686a00ab44aad5ee9cf43ea16a
+guid: 58a7a451817924342b881613ea37e8ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpaceCat-Sheet-export_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.49999997, y: 0.45507646}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de5e63d6a85d652409e2f4ef5c780781
-      internalID: 1580434318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpaceCat-Sheet-export_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2a55b24675a8944ba5e522973669c08
-      internalID: -1425544863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpaceCat-Sheet-export_2
+      name: fishing rod animation-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 108
+        height: 215
       alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
+      pivot: {x: 0.5351615, y: 0.2778136}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80e6b6b588652042ab2cc2205c31686
-      internalID: -1451205012
+      spriteID: d141dea2e59e0da49a215c7ed7dae3bc
+      internalID: -274907817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpaceCat-Sheet-export_3
+      name: fishing rod animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 108
         y: 0
-        width: 32
-        height: 32
+        width: 108
+        height: 215
       alignment: 9
-      pivot: {x: 0.5, y: 0.4550765}
+      pivot: {x: 0.5351615, y: 0.2778136}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe7857f33944862429267d5ffbf296fd
-      internalID: -2114635579
+      spriteID: 0511320ee1f3ad74b93f04977c724f0c
+      internalID: 1533383182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19c8f58cff597b45b72d9563d40b0e1
+      internalID: -1011815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab5d63a5961db145b23d251a2b81492
+      internalID: 375356955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeb46b300434e94d94e85daa057d6b8
+      internalID: 62736929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79d3f475cbeed1489ac252127f6dfb4
+      internalID: 537306576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33547e34c8fea374b814c756e5c8d5a5
+      internalID: 691261082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishing rod animation-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 108
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5351615, y: 0.2778136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f196125f99a8945a27863ca1079dbc
+      internalID: -1569550015
       vertices: []
       indices: 
       edges: []
@@ -217,10 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpaceCat-Sheet-export_0: 1580434318
-      SpaceCat-Sheet-export_1: -1425544863
-      SpaceCat-Sheet-export_2: -1451205012
-      SpaceCat-Sheet-export_3: -2114635579
+      fishing rod animation-Sheet_0: -274907817
+      fishing rod animation-Sheet_1: 1533383182
+      fishing rod animation-Sheet_2: -1011815
+      fishing rod animation-Sheet_3: 375356955
+      fishing rod animation-Sheet_4: 62736929
+      fishing rod animation-Sheet_5: 537306576
+      fishing rod animation-Sheet_6: 691261082
+      fishing rod animation-Sheet_7: -1569550015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
