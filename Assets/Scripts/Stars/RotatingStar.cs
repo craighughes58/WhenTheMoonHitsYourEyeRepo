@@ -8,12 +8,15 @@ public class RotatingStar : Star
 
     public override void Hook(BobberManager bobber)
     {
-        StartCoroutine(Rotate());
+        StartCoroutine(Rotate(bobber));
     }
 
-    private IEnumerator Rotate()
+    private IEnumerator Rotate(BobberManager bobber)
     {
-        //rotate the player
+        yield return null;
+        int result = (Random.Range(0, 2) * 2) - 1;
+        print(result);
+        FindObjectOfType<CastController>().ForceRotDir(result);
 
         yield return new WaitUntil(() => !playerOnStar);
         
