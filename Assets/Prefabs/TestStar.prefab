@@ -134,4 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Test Star
-  starRadius: 2.31
+  starRadius: 3

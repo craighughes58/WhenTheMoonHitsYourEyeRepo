@@ -11,6 +11,7 @@ public class CastController : MonoBehaviour
     public void SetPlayer(BobberManager bobber, float pointerDist = .45f)
     {
         bobberManager = bobber;
+        transform.GetChild(0).transform.localPosition = new Vector2(0, pointerDist);
     }
 
     public void OnFire(InputValue value)

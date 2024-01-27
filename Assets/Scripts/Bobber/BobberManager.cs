@@ -5,23 +5,30 @@ using UnityEngine;
 public class BobberManager : MonoBehaviour
 {
     [SerializeField] GameObject castPointer;
+    Rigidbody2D rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
         StartCast();
     }
 
     void StartCast(float pointerDist = .45f)
     {
-        Instantiate(castPointer).GetComponent<CastController>().SetPlayer(this, pointerDist);
+        CastController cast = Instantiate(castPointer).GetComponent<CastController>();
+        cast.transform.position = transform.position;
+        cast.SetPlayer(this, pointerDist);
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        print("AAA");
         IHookable hookableObj = other.GetComponent<IHookable>();
 
         if (hookableObj == null) return;
-        
+
+        rb.velocity = Vector2.zero;
         hookableObj.Hook(this);
         Star star = other.GetComponent<Star>();
         if (star == null) return;
