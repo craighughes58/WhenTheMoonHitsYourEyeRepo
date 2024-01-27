@@ -27,6 +27,7 @@ public class CastController : MonoBehaviour
     {
         bobberManager.transform.position = transChild.position;
         bobberManager.GetComponent<Rigidbody2D>().velocity = transform.up * castSpeed;
+        bobberManager.transform.up = transform.up;
         rotLocked = false;
         Destroy(gameObject);
     }
