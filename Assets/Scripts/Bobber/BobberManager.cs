@@ -15,4 +15,13 @@ public class BobberManager : MonoBehaviour
     {
          Instantiate(castPointer).GetComponent<CastController>().SetPlayer(this);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        IHookable hookableObj = other.GetComponent<IHookable>();
+        if(hookableObj != null)
+        {
+            hookableObj.Hook(this);
+        }
+    }
 }

@@ -339,7 +339,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -778,8 +778,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1.0003573
-    height: 1
+    width: 1
+    height: 0.9998566
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
