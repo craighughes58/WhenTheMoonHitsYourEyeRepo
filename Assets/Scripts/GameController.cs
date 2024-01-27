@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 
     //
     private bool _failedCast = false;
+    //
+    private bool _successfulCast = false;
     #endregion
     #region Serialized Variables
 
@@ -76,22 +78,34 @@ public class GameController : MonoBehaviour
 
     private IEnumerator ExecuteCoreLoop()
     {
-        bool _failedCast = false;
+
         //show horror
         CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
         //wait
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 4f);
+        if (_failedCast)
+        {
+            //wait
+            HorrorBehaviour.Instance.MoveForward();
+            _failedCast = false;
+        }
+        else if (_successfulCast)
+        {
+            //
+            _successfulCast = false;
+        }
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //horror does roar
         //wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //pan to show player
         CameraController.Instance.UpdatePosition(_castingPosition);
         //wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //player cast
 
         //wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //move to player position
         
         //WAIT UNTIL FAILURE
@@ -169,11 +183,15 @@ public class GameController : MonoBehaviour
     #endregion
 
 
-    #region
+    #region PlayerCommunication
 
     public void NotifyCastFailure()
     {
         _failedCast = true;
+    }
+    public void NotifyCastSuccess()
+    {
+        _successfulCast = true;
     }
     #endregion
 }

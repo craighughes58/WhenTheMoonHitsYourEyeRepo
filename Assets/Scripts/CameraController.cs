@@ -55,4 +55,9 @@ public class CameraController : MonoBehaviour
         _lastPositon = transform.position;
         _targetPosition = new Vector3(_nextPos.x, _nextPos.y, -10f);
     }
+
+    public float GetDesiredDuration()
+    {
+        return _desiredDuration;
+    }
 }
