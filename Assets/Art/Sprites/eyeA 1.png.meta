@@ -1,0 +1,1658 @@
+fileFormatVersion: 2
+guid: c4060474545912b4bbd9fedad9de4122
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: eyeA 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90e6530940cc4a459f3f5d452735235
+      internalID: 276364804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe938fab873fcd4e910c7ef5baf0914
+      internalID: -1945417578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_2
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12a79a69b79c1146bf421b9f0d146a6
+      internalID: 1404812657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_3
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592085785e2712e4eac4a65c74adb886
+      internalID: 1414096901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_4
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d2551108be59b4d802817f145c6d5f
+      internalID: -669035119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_5
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e71d61501aacfd4eb7915036b754ac8
+      internalID: -1810076633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_6
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479dae67fc8509a40a9000629f980c91
+      internalID: -1808904262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_7
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae25ab24dcdf83479f5b18bb41292c0
+      internalID: 2039333095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_8
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 2506
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a29fbe315218f44932a0b08b1b51a0
+      internalID: 199200063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35eedbfbb5ceba47874df000fd4177a
+      internalID: 2136678227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_10
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2da57d282a75349ace891bafa1fea5
+      internalID: -1229135155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_11
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9009b84b443ca34da45116c7bf77af2
+      internalID: 1963977087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_12
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9cb62b72d7fd24e94fc084624c187a
+      internalID: -740947878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_13
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38b674436777f54cbe0cf281d2acd8d
+      internalID: -2114421694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_14
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44133ecfe831464f82b883420549fc6
+      internalID: -969089585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_15
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812c8f4037746c440aa076e4c0fb17f2
+      internalID: 1865760687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_16
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2becbdf94227ef49ab4bcd101df8e77
+      internalID: 662495109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_17
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 2148
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794eaa53676bba640961a14a4bb17f11
+      internalID: 1975699361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67234b8c82f69bf4686283ecb5499a7d
+      internalID: 1133536291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa2f16e1d553bf439e5fadf8e8cad99
+      internalID: 866548373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_20
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32246613c79fe664e92aaaea591e2b81
+      internalID: -1679546504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_21
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243fffca1bcbe80459117cf4e053c589
+      internalID: 294321852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_22
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b033a6ce531b548af3791ccc81a4c5
+      internalID: 2089089568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_23
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea07428034db75a4d9f2749a0c8a6cc2
+      internalID: 1217636828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_24
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b46b644568848d4ab7bf63776bb2481
+      internalID: -82856376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_25
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847d5e760c8c40849b2037128d9ee332
+      internalID: -910163099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_26
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 1790
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7092276d0270ca14a927f4b8a3812523
+      internalID: 333093595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9d87d82b8b7464fbd0218f820629c9
+      internalID: 1268351211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3261e2613ae79a44a98e43d609e9d966
+      internalID: 1946720806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_29
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8af16e7931d5e341a1887f0699c94f0
+      internalID: -1119980757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_30
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5291a0a2477292b41b9e6656ef065f0f
+      internalID: -1862242978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_31
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a06642ba13b4d4aa4f3fee33fd9e36
+      internalID: -1194109505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_32
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be986c5ba3d806f4e92318f4083e9200
+      internalID: 753434627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_33
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5b73cdd6b7eaf4bb1665359fc5b790
+      internalID: 581926125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_34
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8daa3431284294bae61c6350ae20dd
+      internalID: -1464601075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_35
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 1432
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f50ad88521340a4ca78a27dbb29f908
+      internalID: 930140170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f997c3edf5bdbe41b36461661b44866
+      internalID: 1805279012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_37
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c76fe04d98c154bb003e4e13eb7831
+      internalID: 1850864093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_38
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12482774e01d4174b9becf5c6ccdf91e
+      internalID: 1913763050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_39
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4508935175930b241a48287f0f5d38b2
+      internalID: -249276882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_40
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f688af330e0d842873fee29d1612c7
+      internalID: 1188919673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_41
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57075bd372bf55b46814e341e2218e51
+      internalID: -1970830634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_42
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd100396f71c6f4493a6b3094587feb
+      internalID: 986533395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_43
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847d603cb2511e74db2d39c3bb5ec580
+      internalID: -1815036055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_44
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 1074
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d880ffee52de546b2be0e2105433c4
+      internalID: -799654970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3e49b6b7e375d40adba0b7cdbfebaa
+      internalID: -1428607719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_46
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2f258757543464283dea18a9d68296
+      internalID: -155875441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_47
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f4a45087dccf34995befb943da71b5
+      internalID: 369328127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_48
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c934f305ff0c44dbe2d2bf1884f944
+      internalID: -1039811834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_49
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5155a105de81f945b938226dfbe7c72
+      internalID: 1093104072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_50
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c093645686f73749997a1e277ad951f
+      internalID: -386560727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_51
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eb1b32ac3bb1643865bdeacabaa07e
+      internalID: 1187697213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_52
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4390e82b7b7cc354193e4509e73092c0
+      internalID: 2048764880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_53
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 716
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951d3499954b0fa40a68c48fbd7971b6
+      internalID: -492851641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fe32e15b245184b8fc3de546f796be
+      internalID: -1410376027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_55
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b3f777002c39d49bd64b0b615c2b57
+      internalID: -1784188532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_56
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbde397c0a65ede4ea4a03fd9ddf6b49
+      internalID: 1658454492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_57
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cd4db24bcfcea40b3d983b7646de95
+      internalID: -301300617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_58
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4fdf121344c0046b8351339bd904f1
+      internalID: -270801199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_59
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86991c8395e30244c9df895db63a40bf
+      internalID: 517762342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_60
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681ac55ed303fc2499fa95b95b960d59
+      internalID: -1245258173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_61
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891f58615ef9a27438c0cf23a48fcdd9
+      internalID: -737905864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_62
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 358
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a62a83d502aaa24a8970d310fe946f2
+      internalID: -824208491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ac2f16280b3204ca77082e1a3a09af
+      internalID: -154156853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_64
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4132f5a52cf481442ba5c00c82c1d289
+      internalID: -915566172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_65
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537b8c08b7f57d44b8c67a1a3987fdea
+      internalID: 2020993446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_66
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91446502975a3e343bf6b8d200e92bbe
+      internalID: -1635067725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_67
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef734c17b0da7b4d8f437c023b6c8bb
+      internalID: 1224307056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeA 1_68
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 0
+        width: 558
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8d7bda69e6c0b4392641bfe7ffc1e7
+      internalID: -1540578565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      eyeA 1_0: 276364804
+      eyeA 1_1: -1945417578
+      eyeA 1_10: -1229135155
+      eyeA 1_11: 1963977087
+      eyeA 1_12: -740947878
+      eyeA 1_13: -2114421694
+      eyeA 1_14: -969089585
+      eyeA 1_15: 1865760687
+      eyeA 1_16: 662495109
+      eyeA 1_17: 1975699361
+      eyeA 1_18: 1133536291
+      eyeA 1_19: 866548373
+      eyeA 1_2: 1404812657
+      eyeA 1_20: -1679546504
+      eyeA 1_21: 294321852
+      eyeA 1_22: 2089089568
+      eyeA 1_23: 1217636828
+      eyeA 1_24: -82856376
+      eyeA 1_25: -910163099
+      eyeA 1_26: 333093595
+      eyeA 1_27: 1268351211
+      eyeA 1_28: 1946720806
+      eyeA 1_29: -1119980757
+      eyeA 1_3: 1414096901
+      eyeA 1_30: -1862242978
+      eyeA 1_31: -1194109505
+      eyeA 1_32: 753434627
+      eyeA 1_33: 581926125
+      eyeA 1_34: -1464601075
+      eyeA 1_35: 930140170
+      eyeA 1_36: 1805279012
+      eyeA 1_37: 1850864093
+      eyeA 1_38: 1913763050
+      eyeA 1_39: -249276882
+      eyeA 1_4: -669035119
+      eyeA 1_40: 1188919673
+      eyeA 1_41: -1970830634
+      eyeA 1_42: 986533395
+      eyeA 1_43: -1815036055
+      eyeA 1_44: -799654970
+      eyeA 1_45: -1428607719
+      eyeA 1_46: -155875441
+      eyeA 1_47: 369328127
+      eyeA 1_48: -1039811834
+      eyeA 1_49: 1093104072
+      eyeA 1_5: -1810076633
+      eyeA 1_50: -386560727
+      eyeA 1_51: 1187697213
+      eyeA 1_52: 2048764880
+      eyeA 1_53: -492851641
+      eyeA 1_54: -1410376027
+      eyeA 1_55: -1784188532
+      eyeA 1_56: 1658454492
+      eyeA 1_57: -301300617
+      eyeA 1_58: -270801199
+      eyeA 1_59: 517762342
+      eyeA 1_6: -1808904262
+      eyeA 1_60: -1245258173
+      eyeA 1_61: -737905864
+      eyeA 1_62: -824208491
+      eyeA 1_63: -154156853
+      eyeA 1_64: -915566172
+      eyeA 1_65: 2020993446
+      eyeA 1_66: -1635067725
+      eyeA 1_67: 1224307056
+      eyeA 1_68: -1540578565
+      eyeA 1_7: 2039333095
+      eyeA 1_8: 199200063
+      eyeA 1_9: 2136678227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
