@@ -133,5 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f8203ceb1fcd849b634d925aef0a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: StarName
-  starRadius: 7
+  Name: Big Red
+  starRadius: 8

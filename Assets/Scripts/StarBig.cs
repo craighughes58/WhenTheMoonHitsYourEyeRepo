@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class StarBig : Star
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Hook(BobberManager bobber)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("I'm gonna esploooooode");
     }
 }
