@@ -8,7 +8,7 @@ public class MovingStar : Star
     public float speed = 4f;
 
     [SerializeField()] private Transform destination;
-
+    [SerializeField] float _maximumMovementRange;
     private int destinationIndex;
     public Transform[] travelPoints;
 
@@ -23,9 +23,22 @@ public class MovingStar : Star
         moving = true;
 
         platrb = GetComponent<Rigidbody2D>();
+        if (travelPoints == null || travelPoints.Length <= 0) SpawnTravelPoints();
+
         transform.position = travelPoints[0].position;
         destination = travelPoints[1].transform;
         destinationIndex = 1;
+    }
+
+    void SpawnTravelPoints()
+    {
+        travelPoints = new Transform[Random.Range(2, 4)];
+        for (int i = 0; i < travelPoints.Length; i++)
+        {
+            GameObject obj = new GameObject(); 
+            obj.transform.position  = transform.position + (Vector3)(Random.insideUnitCircle * _maximumMovementRange);
+            travelPoints[i] = obj.transform;
+        }
     }
 
     public void FixedUpdate()

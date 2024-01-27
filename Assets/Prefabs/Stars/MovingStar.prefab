@@ -87,10 +87,8 @@ MonoBehaviour:
   gc: {fileID: 0}
   speed: 300
   destination: {fileID: 0}
-  travelPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _maximumMovementRange: 3
+  travelPoints: []
   platrb: {fileID: 0}
   moving: 0
 --- !u!50 &7630407437429636688

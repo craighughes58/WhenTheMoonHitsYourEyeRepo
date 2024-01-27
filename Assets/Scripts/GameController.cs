@@ -31,6 +31,8 @@ public class GameController : MonoBehaviour
 
     #endregion
 
+    public delegate void Alert();
+    public Alert onRoundEnd;
 
     public static GameController Instance;
 
@@ -114,8 +116,9 @@ public class GameController : MonoBehaviour
         //move to player position
 
         //WAIT UNTIL FAILURE
-        yield return new WaitUntil(() => _failedCast);
+        yield return new WaitUntil(() => _failedCast || _successfulCast);
         yield return null;
+        onRoundEnd?.Invoke();
     }
 
 
