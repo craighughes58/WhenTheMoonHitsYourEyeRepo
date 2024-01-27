@@ -8,6 +8,15 @@ public class BobberManager : MonoBehaviour
     Rigidbody2D rb;
 
 
+    [Tooltip("The sound made when the bobber fails")]
+    [SerializeField] private AudioClip _failedCastSound;
+
+    //the last viable position of the player
+    private Vector3 _lastPosition;
+
+    //
+    private bool _hasFailed = false;
+
 
     private void Awake()
     {
@@ -25,7 +34,16 @@ public class BobberManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(_hasFailed)
+        {
+            return;
+        }
+        if (other.tag.Equals("MainCamera"))
+        {
+            StartCoroutine(ReturnToLastPosition());
+            return;
 
+        }
         IHookable hookableObj = other.GetComponent<IHookable>();
         if (hookableObj == null) return;
 
@@ -37,10 +55,34 @@ public class BobberManager : MonoBehaviour
         transform.position = star.transform.position;
         CameraController.Instance.UpdatePosition(transform.position,true);
         StartCast(star.starRadius);
+        _lastPosition = transform.position;
     }
 
 /*    private IEnumerator DelayedCameraUpdate()
     {
         yield return new WaitForSeconds 
     }*/
+
+    public void MissPosition()
+    {
+        StartCoroutine(ReturnToLastPosition());
+    }
+    private IEnumerator ReturnToLastPosition()
+    {
+        ScreenShaker.shakeDuration = .1f;
+        //fail cast sound
+        AudioManager.Instance.PlayClip2D(_failedCastSound);
+        while (transform.position != _lastPosition)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _lastPosition, castPointer.GetComponent<CastController>().GetCastSpeed());
+            yield return new WaitForEndOfFrame();
+
+        }
+        print("DONJE");
+        
+        GameController.Instance.NotifyCastFailure();
+    }
+
+
+
 }
