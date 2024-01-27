@@ -7,9 +7,13 @@ using UnityEngine;
 public class Star : MonoBehaviour
 {
     public string Name = "StarName";
+    public float starRadius = 1f;
+
 
     public void caughtByPlayer()
     {
 
     }
+
+
 }
