@@ -57,5 +57,9 @@ public class CastController : MonoBehaviour
         rotLocked = true;
     }
 
+    public float GetCastSpeed()
+    {
+        return castSpeed;
+    }
 
 }

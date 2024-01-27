@@ -10,6 +10,10 @@ public class GameController : MonoBehaviour
     private bool _failedCast = false;
     //
     private bool _successfulCast = false;
+    //
+    private GameObject _currentPlayer;
+
+
     #endregion
     #region Serialized Variables
 
@@ -19,8 +23,10 @@ public class GameController : MonoBehaviour
     [Tooltip("")]
     [SerializeField] private float _endingDelay;
 
-    [Tooltip("The sound made when the bobber fails")]
-    [SerializeField] private AudioClip _failedCastSound;
+    [Tooltip("")]
+    [SerializeField] private GameObject _player;
+    [Tooltip("")]
+    [SerializeField] private Vector3 _playerStartingPosition;
 
 
     [Header("CAMERA POSITIONS")]
@@ -133,15 +139,19 @@ public class GameController : MonoBehaviour
 
         //player cast
         playerAnimator.Play("Cast");
-
+       
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
+        _currentPlayer = Instantiate(_player,_playerStartingPosition,Quaternion.identity);
         CastController.Instance.OnFire(null);
-        //move to player position
-
         //WAIT UNTIL FAILURE
         yield return new WaitUntil(() => _failedCast || _successfulCast);
-        yield return null;
+        print("1");
+        CameraController.Instance.UpdatePosition(_castingPosition, false);
+        print("2");
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 1f);
+        print("3");
+        Destroy(_currentPlayer);
         onRoundEnd?.Invoke();
     }
 
@@ -203,7 +213,6 @@ public class GameController : MonoBehaviour
 
     public void NotifyCastFailure()
     {
-        AudioManager.Instance.PlayClip2D(_failedCastSound);
         _failedCast = true;
     }
     public void NotifyCastSuccess()

@@ -6,6 +6,7 @@ public class CrumblingStar : Star
 {
     public float timeBeforeCrumble = 3f;
 
+    private BobberManager _player;
     [Tooltip("The objects that spawn after destruction")]
     [SerializeField] private GameObject _particles;
 
@@ -20,13 +21,26 @@ public class CrumblingStar : Star
 
         gc.NotifyCastFailure();
         Instantiate(_particles,transform.position,Quaternion.identity);
+        if(_player!= null)
+        {
+            _player.MissPosition();
+        }
         Destroy(this.gameObject);
     }
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if(other.GetComponent<BobberManager>() != null)
+        if (collision.GetComponent<BobberManager>() != null)
         {
             StopAllCoroutines();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<BobberManager>() != null)
+        {
+            _player = collision.GetComponent<BobberManager>();
         }
     }
 
