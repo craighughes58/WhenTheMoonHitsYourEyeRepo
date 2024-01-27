@@ -781,11 +781,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 1617309200}
   _endingDelay: 5
-  _failedCastSound: {fileID: 8300000, guid: 82e24e1cb539b4e478eb1d4549f64c9b, type: 3}
+  _failedCastSound: {fileID: 0}
   _winPosition: {x: 0, y: 600, z: -10}
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
   _playStartingAnimation: 1
+  _starsToSpawn: 4000
+  _maxAttempts: 10
+  _minStarDist: 4
+  _xMinandMax: {x: -100, y: 100}
+  _yMinandMax: {x: 5, y: 600}
+  _starNode: {fileID: 4062797422370978232, guid: df035b61a6cb98f4dbd710120222bd76, type: 3}
 --- !u!4 &1139497338
 Transform:
   m_ObjectHideFlags: 0
@@ -795,7 +801,7 @@ Transform:
   m_GameObject: {fileID: 1139497336}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.379234, y: 205.02829, z: -3.3425024}
+  m_LocalPosition: {x: -99, y: 205.02829, z: -3.3425024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -951,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 32
+  m_AssetsPPU: 16
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_CropFrame: 4
@@ -1048,8 +1054,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 2.8125
+  orthographic: 1
+  orthographic size: 5.625
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
