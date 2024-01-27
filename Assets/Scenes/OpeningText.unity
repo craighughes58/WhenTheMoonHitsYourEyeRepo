@@ -227,10 +227,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The eldritch horror, Glorbulox, approaches the moon once more.\n\nIt is
-    up to Samqit, the hero of the stars, to save the moon from total destruction\n\nArmed
-    with the Fishing Pole of Perceus, they will blind the horror and save the day.
-    \n\n\n"
+  m_text: "Deep into the night, the eldritch horror, Glorbulox, approaches the moon
+    once more.\n\nIt is up to Samqit, the hero of the stars, to save the moon from
+    total destruction\n\nArmed with the Fishing Pole of Perceus, they will blind
+    the horror and save the day. \n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -909,7 +909,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 89aeda9c597fbf942afef55b8e5bc8fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: be18fb19e8eb9154f9d4dfd81bba0a23, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
