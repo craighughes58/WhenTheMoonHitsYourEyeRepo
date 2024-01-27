@@ -11,9 +11,14 @@ public class CastController : MonoBehaviour
     Transform transChild;
     bool rotLocked;
 
+    public static CastController Instance;
     private void Awake()
     {
         transChild = transform.GetChild(0).transform;
+        if(Instance == null)
+        {
+            Instance = this;
+        }
     }
 
 

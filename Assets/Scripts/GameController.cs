@@ -121,13 +121,14 @@ public class GameController : MonoBehaviour
 
             //show horror
             CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + .5f);
             //wait
-            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
             if (_failedCast)
             {
                 //wait
                 HorrorBehaviour.Instance.MoveForward();
                 CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+                yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
                 _failedCast = false;
             }
             else if (_successfulCast)
@@ -135,7 +136,6 @@ public class GameController : MonoBehaviour
                 //
                 _successfulCast = false;
             }
-            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
             //horror does roar
             HorrorBehaviour.Instance.ActivateRoar();
             //shake the screen
@@ -152,7 +152,8 @@ public class GameController : MonoBehaviour
         playerAnimator.Play("Cast");
 
         //wait
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
+        CastController.Instance.OnFire(null);
         //move to player position
 
         //WAIT UNTIL FAILURE
