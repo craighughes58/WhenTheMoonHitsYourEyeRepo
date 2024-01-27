@@ -1,4 +1,4 @@
 interface IHookable
 {
-    public void Hook(BobberManager boober);
+    public void Hook(BobberManager bobber);
 }
