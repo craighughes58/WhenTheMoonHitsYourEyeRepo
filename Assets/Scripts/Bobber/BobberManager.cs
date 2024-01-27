@@ -7,6 +7,8 @@ public class BobberManager : MonoBehaviour
     [SerializeField] GameObject castPointer;
     Rigidbody2D rb;
 
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
