@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasPieces:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 936070219}
   _delayTime: 0
 --- !u!4 &417791711
 Transform:

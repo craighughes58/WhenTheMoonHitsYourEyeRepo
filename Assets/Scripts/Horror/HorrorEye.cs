@@ -14,6 +14,12 @@ public class HorrorEye : MonoBehaviour, IHookable
     private SpriteRenderer _spriteRenderer;
     #endregion
 
+
+    private void Start()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     public void Hook(BobberManager boober)
     {
         if(_spriteRenderer.sprite != _closed)
