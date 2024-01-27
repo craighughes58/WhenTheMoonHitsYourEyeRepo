@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Vector3 _winPosition;
     [SerializeField] private Vector3 _lossPosition;
     [SerializeField] private Vector3 _castingPosition;
-
+    [SerializeField] private bool _playStartingAnimation;
 
     #endregion
 
@@ -69,39 +69,45 @@ public class GameController : MonoBehaviour
     private IEnumerator ExecuteCoreLoop()
     {
 
-        //show horror
-        CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
-        //wait
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
-        if (_failedCast)
+        if (_playStartingAnimation)
         {
-            //wait
-            HorrorBehaviour.Instance.MoveForward();
+
+
+            //show horror
             CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
-            _failedCast = false;
+            //wait
+            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
+            if (_failedCast)
+            {
+                //wait
+                HorrorBehaviour.Instance.MoveForward();
+                CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+                _failedCast = false;
+            }
+            else if (_successfulCast)
+            {
+                //
+                _successfulCast = false;
+            }
+            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
+            //horror does roar
+            //shake the screen
+            ScreenShaker.shakeDuration = 3f;
+            //wait
+            yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         }
-        else if (_successfulCast)
-        {
-            //
-            _successfulCast = false;
-        }
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
-        //horror does roar
-        //shake the screen
-        ScreenShaker.shakeDuration = 3f;
-        //wait
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //pan to show player
         CameraController.Instance.UpdatePosition(_castingPosition);
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
+
         //player cast
         playerAnimator.Play("Cast");
 
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //move to player position
-        
+
         //WAIT UNTIL FAILURE
         yield return new WaitUntil(() => _failedCast);
         yield return null;
