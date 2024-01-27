@@ -608,6 +608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1139497338}
   - component: {fileID: 1139497337}
+  - component: {fileID: 1139497339}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -634,12 +635,6 @@ MonoBehaviour:
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
   _playStartingAnimation: 1
-  _starsToSpawn: 6000
-  _maxAttempts: 10
-  _minStarDist: 4
-  _xMinandMax: {x: -50, y: 50}
-  _yMinandMax: {x: 5, y: 100}
-  _starNode: {fileID: 4062797422370978232, guid: df035b61a6cb98f4dbd710120222bd76, type: 3}
 --- !u!4 &1139497338
 Transform:
   m_ObjectHideFlags: 0
@@ -655,6 +650,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139497339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139497336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cf6cca493ea5d42afa143ef27e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxAttempts: 10
+  _minStarDist: 5
+  _starNode: {fileID: 4062797422370978232, guid: df035b61a6cb98f4dbd710120222bd76, type: 3}
+  _xMinMax: {x: -50, y: 50}
+  _yMinMax: {x: 5, y: 100}
 --- !u!1 &1165854934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,8 +1012,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 0.99961835
+    width: 1.0003937
+    height: 0.99912584
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
