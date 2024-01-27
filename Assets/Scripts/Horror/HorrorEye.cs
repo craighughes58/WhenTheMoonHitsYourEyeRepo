@@ -2,26 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorrorEye : MonoBehaviour
+public class HorrorEye : MonoBehaviour, IHookable
 {
     #region Serialized Variable
     [Tooltip("The visual that the eye is hit")]
-    [SerializeField] private Sprite Closed;
+    [SerializeField] private Sprite _closed;
+
     #endregion
     #region Private Variable
-
+    //
+    private SpriteRenderer _spriteRenderer;
     #endregion
 
-    // Start is called before the first frame update
-    void Start()
+    public void Hook(BobberManager boober)
     {
-        
+        if(_spriteRenderer.sprite != _closed)
+        {
+            _spriteRenderer.sprite = _closed;
+            HorrorBehaviour.Instance.LoseEye();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 }
