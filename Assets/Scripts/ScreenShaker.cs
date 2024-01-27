@@ -20,6 +20,7 @@ public class ScreenShaker : MonoBehaviour
     {
         if (shakeDuration > 0)
         {
+            print("HAPPENING");
             transform.position = transform.position + (Random.insideUnitSphere * shakeAMT);
             shakeDuration -= Time.deltaTime;
             
