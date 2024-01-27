@@ -5,7 +5,6 @@ using UnityEngine;
 public class StarSpawner : MonoBehaviour
 {
     [Header("Star Spawn Values")]
-    [SerializeField] private float _starsToSpawn;
     [Tooltip("Ends the Star spawn after failing to place a start this many times")]
     [SerializeField] private float _maxAttempts;
     [Tooltip("Stars must be at least this far apart from each other")]
