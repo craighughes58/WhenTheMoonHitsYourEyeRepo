@@ -8,14 +8,23 @@ public class CastController : MonoBehaviour
     [SerializeField] float castSpeed, rotSpeed;
     BobberManager bobberManager;
     float rotDir;
+    Transform transChild;
+
+    private void Awake()
+    {
+        transChild = transform.GetChild(0).transform;
+    }
+
+
     public void SetPlayer(BobberManager bobber, float pointerDist = .45f)
     {
         bobberManager = bobber;
-        transform.GetChild(0).transform.localPosition = new Vector2(0, pointerDist);
+        transChild.localPosition = new Vector2(0, pointerDist);
     }
 
     public void OnFire(InputValue value)
     {
+        bobberManager.transform.position = transChild.position;
         bobberManager.GetComponent<Rigidbody2D>().velocity = transform.up * castSpeed;
         Destroy(gameObject);
     }
