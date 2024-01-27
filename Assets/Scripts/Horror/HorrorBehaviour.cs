@@ -11,7 +11,7 @@ public class HorrorBehaviour : MonoBehaviour
     //The current position of the horror in the array
     private int _currentPosition;
 
-    private static HorrorBehaviour Instance;
+    public static HorrorBehaviour Instance;
 
     private void Awake()
     {
@@ -37,7 +37,6 @@ public class HorrorBehaviour : MonoBehaviour
     void Start()
     {
         _currentPosition = _positionNodes.Count;
-        
     }
 
     private void FixedUpdate()
