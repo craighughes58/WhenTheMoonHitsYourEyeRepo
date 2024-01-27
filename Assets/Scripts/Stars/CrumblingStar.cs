@@ -15,6 +15,8 @@ public class CrumblingStar : Star
     {
         yield return new WaitForSeconds(timeBeforeCrumble);
 
+        gc.NotifyCastFailure();
+
         StopAllCoroutines();
         Destroy(this.gameObject);
     }

@@ -9,10 +9,11 @@ public class Star : MonoBehaviour, IHookable
     public string Name = "StarName";
     public float starRadius = 1f;
 
+    public GameController gc;
 
-    public void caughtByPlayer()
+    private void Awake()
     {
-
+        gc = FindObjectOfType<GameController>();
     }
 
     public virtual void Hook(BobberManager bobber)
