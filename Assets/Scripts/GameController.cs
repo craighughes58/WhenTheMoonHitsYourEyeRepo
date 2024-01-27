@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
 {
     #region Private Variables
 
+    //
+    private bool _failedCast = false;
     #endregion
     #region Serialized Variables
 
@@ -22,6 +24,15 @@ public class GameController : MonoBehaviour
     public float moonOffset = 5;
     public float starCount = 30;
 
+    [Tooltip("The ")]
+    [SerializeField] private float _endingDelay;
+
+    [Header("CAMERA POSITIONS")]
+    [SerializeField] private Vector3 _winPosition;
+    [SerializeField] private Vector3 _lossPosition;
+    [SerializeField] private Vector3 _castingPosition;
+
+
     #endregion
 
 
@@ -35,69 +46,135 @@ public class GameController : MonoBehaviour
             Instance = this;
         }
 
-        float bottomLoc = NewMethod();
+        //float bottomLoc = NewMethod();
 
-        Instantiate(moon, new Vector2(0, bottomLoc - 5), Quaternion.identity);
+        //Instantiate(moon, new Vector2(0, bottomLoc - 5), Quaternion.identity);
 
-        SpawnStars();
+        //SpawnStars();
 
     }
 
-    private float NewMethod()
-    {
-        float sizeX = gameSpace.GetComponent<BoxCollider2D>().size.x;
-        float sizeY = gameSpace.GetComponent<BoxCollider2D>().size.y;
+    /*    private float NewMethod()
+        {
+            float sizeX = gameSpace.GetComponent<BoxCollider2D>().size.x;
+            float sizeY = gameSpace.GetComponent<BoxCollider2D>().size.y;
 
-        float leftLoc = -sizeX / 2;
-        float rightLoc = sizeX / 2;
-        float topLoc = sizeY / 2;
-        float bottomLoc = -sizeY / 2;
+            float leftLoc = -sizeX / 2;
+            float rightLoc = sizeX / 2;
+            float topLoc = sizeY / 2;
+            float bottomLoc = -sizeY / 2;
 
-        upperRightCorner = new Vector2(rightLoc, topLoc);
-        lowerLeftCorner = new Vector2(leftLoc, bottomLoc);
-        return bottomLoc;
-    }
-
+            upperRightCorner = new Vector2(rightLoc, topLoc);
+            lowerLeftCorner = new Vector2(leftLoc, bottomLoc);
+            return bottomLoc;
+        }
+    */
     void Start()
     {
-        
-    }
-    
-    void Update()
-    {
-        
+
     }
 
-    public void SpawnStars() 
+    private IEnumerator ExecuteCoreLoop()
     {
-        //get random positions
+        bool _failedCast = false;
+        //show horror
+        CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+        //wait
+        yield return new WaitForSeconds(10f);
+        //horror does roar
+        //wait
+        yield return new WaitForSeconds(5f);
+        //pan to show player
+        CameraController.Instance.UpdatePosition(_castingPosition);
+        //wait
+        yield return new WaitForSeconds(5f);
+        //player cast
 
-        for(int i = 0; i < starCount; i++)
+        //wait
+        yield return new WaitForSeconds(5f);
+        //move to player position
+        
+        //WAIT UNTIL FAILURE
+        yield return new WaitUntil(() => _failedCast);
+        yield return null;
+    }
+
+
+    /*    public void SpawnStars() 
         {
-            int starToSpawn = Random.RandomRange(0, starTypes.Length);
+            //get random positions
 
-            float spawnX = Random.RandomRange(lowerLeftCorner.x, upperRightCorner.x);
-            float spawnY = Random.RandomRange(lowerLeftCorner.y, upperRightCorner.y);
+            for(int i = 0; i < starCount; i++)
+            {
+                int starToSpawn = Random.RandomRange(0, starTypes.Length);
+
+                float spawnX = Random.RandomRange(lowerLeftCorner.x, upperRightCorner.x);
+                float spawnY = Random.RandomRange(lowerLeftCorner.y, upperRightCorner.y);
 
 
-            Vector2 spawnPos = new Vector2(spawnX, spawnY);
+                Vector2 spawnPos = new Vector2(spawnX, spawnY);
 
-            Instantiate(starTypes[starToSpawn], spawnPos, Quaternion.identity);
-        }
-    }
+                Instantiate(starTypes[starToSpawn], spawnPos, Quaternion.identity);
+            }
+        }*/
 
 
     #region End Conditions
 
     public void WinGame()
     {
-        
+        StartCoroutine(WinningCoroutine());
+    }
+
+    private IEnumerator WinningCoroutine()
+    {
+        //Move Camera to Win Position
+        CameraController.Instance.UpdatePosition(_winPosition);
+        //wait 
+        yield return new WaitForSeconds(10f);
+        //Launch horror away
+        HorrorBehaviour.Instance.StartLaunch();
+        //wait
+        yield return new WaitForSeconds(5f);
+        //Fade to black 
+        //wait 
+        yield return new WaitForSeconds(5f);
+        //change scene
+        yield return null;
     }
 
     public void LoseGame()
     {
+        StartCoroutine(LosingCoroutine());
+    }
 
+    private IEnumerator LosingCoroutine()
+    {
+        //wait
+        yield return new WaitForSeconds(10f);
+        //move camera to lose position
+        CameraController.Instance.UpdatePosition(_lossPosition);
+        //wait
+        yield return new WaitForSeconds(5f);
+        //The horror Consumes the Moon
+        //wait
+        yield return new WaitForSeconds(5f);
+        //Fade to black
+        //Wait
+        yield return new WaitForSeconds(5f);
+        //Change scene
+        yield return null;
     }
 
     #endregion
+
+
+    #region
+
+    public void NotifyCastFailure()
+    {
+        _failedCast = true;
+    }
+    #endregion
 }
+

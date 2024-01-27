@@ -23,9 +23,8 @@ public class BobberManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("AAA");
-        IHookable hookableObj = other.GetComponent<IHookable>();
 
+        IHookable hookableObj = other.GetComponent<IHookable>();
         if (hookableObj == null) return;
 
         rb.velocity = Vector2.zero;
@@ -34,6 +33,12 @@ public class BobberManager : MonoBehaviour
         if (star == null) return;
 
         transform.position = star.transform.position;
+        CameraController.Instance.UpdatePosition(transform.position);
         StartCast(star.starRadius);
     }
+
+/*    private IEnumerator DelayedCameraUpdate()
+    {
+        yield return new WaitForSeconds 
+    }*/
 }
