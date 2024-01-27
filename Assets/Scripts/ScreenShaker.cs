@@ -20,13 +20,10 @@ public class ScreenShaker : MonoBehaviour
     {
         if (shakeDuration > 0)
         {
-            transform.position = originalPos + (Random.insideUnitSphere * shakeAMT);
+            transform.position = transform.position + (Random.insideUnitSphere * shakeAMT);
             shakeDuration -= Time.deltaTime;
+            
         }
-        else
-        {
-            shakeDuration = 0;
-            transform.position = originalPos;
-        }
+
     }
 }

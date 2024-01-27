@@ -739,7 +739,7 @@ MonoBehaviour:
   _winPosition: {x: 0, y: 600, z: -10}
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
-  _playStartingAnimation: 0
+  _playStartingAnimation: 1
 --- !u!4 &1139497338
 Transform:
   m_ObjectHideFlags: 0
@@ -880,6 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410672254}
   - component: {fileID: 1410672253}
+  - component: {fileID: 1410672256}
   - component: {fileID: 1410672252}
   - component: {fileID: 1410672255}
   - component: {fileID: 1410672251}
@@ -994,10 +995,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.0013540961
     y: 0
-    width: 1
-    height: 1.0004083
+    width: 0.999022
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -1079,6 +1080,19 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1410672256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410672249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a12fdba80773a46a9b0469cc88b1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeAMT: 0.35
 --- !u!1 &1617309197
 GameObject:
   m_ObjectHideFlags: 0
