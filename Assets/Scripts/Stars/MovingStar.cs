@@ -16,8 +16,12 @@ public class MovingStar : Star
 
     public Rigidbody2D platrb;
 
+    public bool moving = true;
+
     private void Start()
     {
+        moving = true;
+
         platrb = GetComponent<Rigidbody2D>();
         transform.position = travelPoints[0].position;
         destination = travelPoints[1].transform;
@@ -26,7 +30,10 @@ public class MovingStar : Star
 
     public void FixedUpdate()
     {
-        MoveTowardDestination();
+        if (moving)
+        {
+            MoveTowardDestination();
+        }
     }
 
     private void MoveTowardDestination()
@@ -52,6 +59,13 @@ public class MovingStar : Star
         }
 
         Debug.DrawRay(transform.position, destinationDirection);
+    }
+
+    public override void Hook(BobberManager bobber)
+    {
+        moving= false;
+
+        platrb.velocity= Vector3.zero;
     }
 
 }

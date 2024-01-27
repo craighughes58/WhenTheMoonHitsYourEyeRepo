@@ -85,13 +85,14 @@ MonoBehaviour:
   Name: StarName
   starRadius: 1
   gc: {fileID: 0}
-  speed: 400
+  speed: 300
   destination: {fileID: 0}
   travelPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   platrb: {fileID: 0}
+  moving: 0
 --- !u!50 &7630407437429636688
 Rigidbody2D:
   serializedVersion: 4
