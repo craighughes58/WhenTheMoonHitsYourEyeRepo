@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour
     public float moonOffset = 5;
     public float starCount = 30;
 
+    [SerializeField] Animator playerAnimator;
+
     [Tooltip("The ")]
     [SerializeField] private float _endingDelay;
 
@@ -103,6 +105,7 @@ public class GameController : MonoBehaviour
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         //player cast
+        playerAnimator.Play("Cast");
 
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);

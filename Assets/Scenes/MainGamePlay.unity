@@ -779,7 +779,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.99962586
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -968,6 +968,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1806389280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806389282}
+  - component: {fileID: 1806389281}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1806389281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806389280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e633f372cd88ac540bc0dd0ce003c5ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starTypes: []
+  horror: {fileID: 0}
+  moon: {fileID: 2086777077}
+  gameSpace: {fileID: 0}
+  upperRightCorner: {x: 0, y: 0}
+  lowerLeftCorner: {x: 0, y: 0}
+  moonOffset: 5
+  starCount: 30
+  playerAnimator: {fileID: 1617309200}
+  _endingDelay: 0
+  _winPosition: {x: 0, y: 0, z: 0}
+  _lossPosition: {x: 0, y: 0, z: 0}
+  _castingPosition: {x: 0, y: 0, z: 0}
+--- !u!4 &1806389282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806389280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2704577, y: 0.51342404, z: 0.044121742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1869700991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1304,3 +1361,4 @@ SceneRoots:
   - {fileID: 810989505}
   - {fileID: 1617309199}
   - {fileID: 1869700991}
+  - {fileID: 1806389282}
