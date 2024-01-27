@@ -19,6 +19,5 @@ public class Star : MonoBehaviour, IHookable
 
     public virtual void Hook(BobberManager bobber)
     {
-        Debug.Log("Something is wrong");
     }
 }

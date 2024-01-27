@@ -57,28 +57,6 @@ public class GameController : MonoBehaviour
         GetComponent<StarSpawner>().SpawnAllStars();
 
     }
-
-    void SpawnStars()
-    {
-       /* int attempts = 0;
-        for(int i = 0; i < _starsToSpawn; ++i)
-        {
-            attempts = 0;
-            bool starSpawned = false;
-            while(!starSpawned)
-            {
-                ++attempts;
-                if(attempts >= _maxAttempts)
-                {
-                    return;
-                }
-                starSpawned = TrySpawnStar();
-            }
-        }*/
-
-    }
-
-
     
 
     /*    private float NewMethod()
@@ -103,11 +81,8 @@ public class GameController : MonoBehaviour
 
     private IEnumerator ExecuteCoreLoop()
     {
-
         if (_playStartingAnimation)
         {
-
-
             //show horror
             CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition(),false);
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + .5f);
@@ -132,6 +107,7 @@ public class GameController : MonoBehaviour
             //wait
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         }
+        _playStartingAnimation = true;
         //pan to show player
         CameraController.Instance.UpdatePosition(_castingPosition,false);
         //wait
@@ -153,6 +129,8 @@ public class GameController : MonoBehaviour
         print("3");
         Destroy(_currentPlayer);
         onRoundEnd?.Invoke();
+
+        StartCoroutine(ExecuteCoreLoop());
     }
 
 

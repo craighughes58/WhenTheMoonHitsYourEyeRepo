@@ -15,8 +15,9 @@ public class RotatingStar : Star
     {
         yield return null;
         int result = (Random.Range(0, 2) * 2) - 1;
-        print(result);
-        FindObjectOfType<CastController>().ForceRotDir(result);
+
+        CastController cast = FindObjectOfType<CastController>();
+        if(cast != null ) cast.ForceRotDir(result);
 
         yield return new WaitUntil(() => !playerOnStar);
         

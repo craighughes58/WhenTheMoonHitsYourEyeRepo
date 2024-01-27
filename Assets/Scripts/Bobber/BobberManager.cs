@@ -26,6 +26,7 @@ public class BobberManager : MonoBehaviour
 
     void StartCast(float pointerDist = .45f)
     {
+        if (_hasFailed) return;
         CastController cast = Instantiate(castPointer).GetComponent<CastController>();
         cast.transform.position = transform.position;
         cast.SetPlayer(this, pointerDist);
@@ -58,11 +59,6 @@ public class BobberManager : MonoBehaviour
         _lastPosition = transform.position;
     }
 
-/*    private IEnumerator DelayedCameraUpdate()
-    {
-        yield return new WaitForSeconds 
-    }*/
-
     public void MissPosition()
     {
         StartCoroutine(ReturnToLastPosition());
@@ -70,16 +66,16 @@ public class BobberManager : MonoBehaviour
     private IEnumerator ReturnToLastPosition()
     {
         ScreenShaker.shakeDuration = .1f;
+        _hasFailed = true;
         //fail cast sound
         AudioManager.Instance.PlayClip2D(_failedCastSound);
+        rb.velocity = Vector2.zero;
         while (transform.position != _lastPosition)
         {
             transform.position = Vector3.MoveTowards(transform.position, _lastPosition, castPointer.GetComponent<CastController>().GetCastSpeed());
             yield return new WaitForEndOfFrame();
 
         }
-        print("DONJE");
-        
         GameController.Instance.NotifyCastFailure();
     }
 
