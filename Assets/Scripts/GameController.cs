@@ -29,16 +29,6 @@ public class GameController : MonoBehaviour
     [SerializeField] private Vector3 _castingPosition;
     [SerializeField] private bool _playStartingAnimation;
 
-    [Header("Star Spawn Values")]
-    [SerializeField] private float _starsToSpawn;
-    [Tooltip("Ends the Star spawn after failing to place a start this many times")]
-    [SerializeField] private float _maxAttempts;
-    [Tooltip("Stars must be at least this far apart from each other")]
-    [SerializeField] private float _minStarDist;
-    [SerializeField] private Vector2 _xMinandMax;
-    [SerializeField] private Vector2 _yMinandMax;
-    [SerializeField] private GameObject _starNode;
-
     #endregion
 
     public delegate void Alert();
@@ -58,13 +48,13 @@ public class GameController : MonoBehaviour
 
         //Instantiate(moon, new Vector2(0, bottomLoc - 5), Quaternion.identity);
 
-        SpawnStars();
+        GetComponent<StarSpawner>().SpawnAllStars();
 
     }
 
     void SpawnStars()
     {
-        int attempts = 0;
+       /* int attempts = 0;
         for(int i = 0; i < _starsToSpawn; ++i)
         {
             attempts = 0;
@@ -78,20 +68,12 @@ public class GameController : MonoBehaviour
                 }
                 starSpawned = TrySpawnStar();
             }
-        }
+        }*/
+
     }
 
-    bool TrySpawnStar()
-    {
-        Vector2 starPos = new Vector2(Random.Range(_xMinandMax.x, _xMinandMax.y), Random.Range(_yMinandMax.x, _yMinandMax.y));
-        RaycastHit2D hit = Physics2D.CircleCast(starPos, _minStarDist, Vector2.zero);
-        if (hit.transform != null) return false;
 
-        Instantiate(_starNode, starPos, Quaternion.identity);
-
-        return true;
-    }
-
+    
 
     /*    private float NewMethod()
         {
