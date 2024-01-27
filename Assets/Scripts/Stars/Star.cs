@@ -9,6 +9,7 @@ public class Star : MonoBehaviour, IHookable
     public string Name = "StarName";
     public float starRadius = 1f;
 
+    [HideInInspector]
     public GameController gc;
 
     private void Awake()

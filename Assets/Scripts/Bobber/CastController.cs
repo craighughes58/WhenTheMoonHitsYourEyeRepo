@@ -9,6 +9,7 @@ public class CastController : MonoBehaviour
     BobberManager bobberManager;
     float rotDir;
     Transform transChild;
+    bool rotLocked;
 
     private void Awake()
     {
@@ -26,13 +27,14 @@ public class CastController : MonoBehaviour
     {
         bobberManager.transform.position = transChild.position;
         bobberManager.GetComponent<Rigidbody2D>().velocity = transform.up * castSpeed;
+        rotLocked = false;
         Destroy(gameObject);
     }
 
     void OnAim(InputValue value)
     {
+        if (rotLocked) return;
         rotDir = value.Get<float>();
-       
     }
 
     private void Update()
@@ -42,4 +44,12 @@ public class CastController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + (-rotDir * rotSpeed * Time.deltaTime));
         }
     }
+
+    public void ForceRotDir(int dir)
+    {
+        rotDir = Mathf.Sign(dir);
+        rotLocked = true;
+    }
+
+
 }
