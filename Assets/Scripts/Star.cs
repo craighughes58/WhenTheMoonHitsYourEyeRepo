@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 
-public class Star : MonoBehaviour
+public class Star : MonoBehaviour, IHookable
 {
     public string Name = "StarName";
     public float starRadius = 1f;
@@ -15,5 +15,8 @@ public class Star : MonoBehaviour
 
     }
 
+    public void Hook(BobberManager bobber)
+    {
 
+    }
 }
