@@ -117,6 +117,7 @@ MonoBehaviour:
   starRadius: 1.5
   gc: {fileID: 0}
   timeBeforeCrumble: 7
+  _particles: {fileID: 404983538342029437, guid: b721957a6b0363b4c89d3e02b75cceab, type: 3}
 --- !u!1 &6936234157674111958
 GameObject:
   m_ObjectHideFlags: 0
