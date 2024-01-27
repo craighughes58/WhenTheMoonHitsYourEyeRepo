@@ -11,7 +11,17 @@ public class HorrorBehaviour : MonoBehaviour
     //The current position of the horror in the array
     private int _currentPosition;
 
-    
+    private static HorrorBehaviour Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
+
     #endregion
     #region Serialized Variables
     [Tooltip("The position that the monster will move to and from")]
