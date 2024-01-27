@@ -6,7 +6,11 @@ public class CameraController : MonoBehaviour
 {
     #region Serialized Variables
     [Tooltip("How fast the camera moves towards the next position")]
-    [SerializeField] private float _speed;
+    [SerializeField] private float _desiredDuration;
+
+    [Tooltip("The curve for the movement")]
+
+    [SerializeField] AnimationCurve _curve;
     #endregion
 
     #region Private Variables
@@ -14,6 +18,8 @@ public class CameraController : MonoBehaviour
     private Vector3 _targetPosition;
     //the position where the camera was
     private Vector3 _lastPositon;
+    //
+    private float _elapsedTimeLerp = 0;
     #endregion
 
     public static CameraController Instance;
@@ -33,18 +39,19 @@ public class CameraController : MonoBehaviour
         _lastPositon = transform.position;
     }
 
-    float dist = 0;
     private void FixedUpdate()
     {
-        dist += _speed * Time.fixedDeltaTime;
         if (_targetPosition != transform.position)
         {
-            transform.position = Vector3.MoveTowards(transform.position, _targetPosition,_speed);//Vector3.Lerp(_lastPositon, _targetPosition, dist);
+            _elapsedTimeLerp += Time.fixedDeltaTime;
+            float _percentageComplete = _elapsedTimeLerp / _desiredDuration;
+            transform.position = Vector3.Lerp(_lastPositon, _targetPosition, _curve.Evaluate(_percentageComplete));
         }
     }
 
     public void UpdatePosition(Vector3 _nextPos)
     {
+        _elapsedTimeLerp = 0;
         _lastPositon = transform.position;
         _targetPosition = new Vector3(_nextPos.x, _nextPos.y, -10f);
     }
