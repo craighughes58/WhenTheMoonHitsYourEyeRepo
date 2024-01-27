@@ -120,14 +120,14 @@ public class GameController : MonoBehaviour
 
 
             //show horror
-            CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+            CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition(),false);
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + .5f);
             //wait
             if (_failedCast)
             {
                 //wait
                 HorrorBehaviour.Instance.MoveForward();
-                CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition());
+                CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition(),false);
                 yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
                 _failedCast = false;
             }
@@ -144,7 +144,7 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         }
         //pan to show player
-        CameraController.Instance.UpdatePosition(_castingPosition);
+        CameraController.Instance.UpdatePosition(_castingPosition,false);
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
 
@@ -176,7 +176,7 @@ public class GameController : MonoBehaviour
     private IEnumerator WinningCoroutine()
     {
         //Move Camera to Win Position
-        CameraController.Instance.UpdatePosition(_winPosition);
+        CameraController.Instance.UpdatePosition(_winPosition,false);
         //wait 
         yield return new WaitForSeconds(10f);
         //Launch horror away
@@ -200,7 +200,7 @@ public class GameController : MonoBehaviour
         //wait
         yield return new WaitForSeconds(10f);
         //move camera to lose position
-        CameraController.Instance.UpdatePosition(_lossPosition);
+        CameraController.Instance.UpdatePosition(_lossPosition,false);
         //wait
         yield return new WaitForSeconds(5f);
         //The horror Consumes the Moon

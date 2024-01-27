@@ -166,6 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: StarName
-  starRadius: 1
+  starRadius: 2
   gc: {fileID: 0}
-  timeBeforeCrumble: 3
+  timeBeforeCrumble: 7

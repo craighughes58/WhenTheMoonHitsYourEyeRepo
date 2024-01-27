@@ -35,7 +35,7 @@ public class BobberManager : MonoBehaviour
         if (star == null) return;
 
         transform.position = star.transform.position;
-        CameraController.Instance.UpdatePosition(transform.position);
+        CameraController.Instance.UpdatePosition(transform.position,true);
         StartCast(star.starRadius);
     }
 

@@ -9,8 +9,9 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _desiredDuration;
 
     [Tooltip("The curve for the movement")]
-
     [SerializeField] AnimationCurve _curve;
+
+    [SerializeField] private float _castYoffset;
     #endregion
 
     #region Private Variables
@@ -49,11 +50,19 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    public void UpdatePosition(Vector3 _nextPos)
+    public void UpdatePosition(Vector3 _nextPos, bool isCast)
     {
         _elapsedTimeLerp = 0;
         _lastPositon = transform.position;
-        _targetPosition = new Vector3(_nextPos.x, _nextPos.y, -10f);
+        if (isCast)
+        {
+            _targetPosition = new Vector3(_nextPos.x, _nextPos.y + _castYoffset, -10f);
+        }
+        else
+        {
+            _targetPosition = new Vector3(_nextPos.x, _nextPos.y, -10f);
+
+        }
     }
 
     public float GetDesiredDuration()

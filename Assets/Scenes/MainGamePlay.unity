@@ -580,15 +580,15 @@ MonoBehaviour:
   playerAnimator: {fileID: 1617309200}
   _endingDelay: 5
   _failedCastSound: {fileID: 8300000, guid: 82e24e1cb539b4e478eb1d4549f64c9b, type: 3}
-  _winPosition: {x: 0, y: 600, z: -10}
+  _winPosition: {x: 0, y: 100, z: -10}
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
   _playStartingAnimation: 1
-  _starsToSpawn: 3000
+  _starsToSpawn: 500
   _maxAttempts: 10
   _minStarDist: 6
   _xMinandMax: {x: -100, y: 100}
-  _yMinandMax: {x: 5, y: 600}
+  _yMinandMax: {x: 5, y: 100}
   _starNode: {fileID: 4062797422370978232, guid: df035b61a6cb98f4dbd710120222bd76, type: 3}
 --- !u!4 &1139497338
 Transform:
@@ -980,6 +980,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _castYoffset: 5
 --- !u!114 &1410672256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,9 +1245,9 @@ MonoBehaviour:
   _roar: {fileID: 8300000, guid: fcb32d4572a6e0f4eb1eceb0e44b8d01, type: 3}
   _hit: {fileID: 8300000, guid: 470dcf6655e033c4286aefae2edada8d, type: 3}
   _positionNodes:
-  - {x: 0, y: 600, z: 0}
-  - {x: 0, y: 400, z: 0}
-  - {x: 0, y: 200, z: 0}
+  - {x: 0, y: 100, z: 0}
+  - {x: 0, y: 66, z: 0}
+  - {x: 0, y: 33, z: 0}
   _eyes:
   - {fileID: 905142585}
   - {fileID: 1360927439}
@@ -1313,7 +1314,7 @@ Transform:
   m_GameObject: {fileID: 2009036460}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 600, z: 0}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 200, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
