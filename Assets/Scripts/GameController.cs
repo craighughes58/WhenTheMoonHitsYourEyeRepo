@@ -108,13 +108,14 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
         }
         _playStartingAnimation = true;
+        playerAnimator.SetTrigger("Recall");
         //pan to show player
         CameraController.Instance.UpdatePosition(_castingPosition,false);
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
 
         //player cast
-        playerAnimator.Play("Cast");
+        playerAnimator.SetTrigger("Cast");
        
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
@@ -123,6 +124,7 @@ public class GameController : MonoBehaviour
         //WAIT UNTIL FAILURE
         yield return new WaitUntil(() => _failedCast || _successfulCast);
         print("1");
+        playerAnimator.SetTrigger("Recall");
         CameraController.Instance.UpdatePosition(_castingPosition, false);
         print("2");
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 1f);

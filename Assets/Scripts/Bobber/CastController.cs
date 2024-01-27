@@ -30,6 +30,11 @@ public class CastController : MonoBehaviour
 
     public void OnFire(InputValue value)
     {
+        if(bobberManager == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         bobberManager.transform.position = transChild.position;
         bobberManager.GetComponent<Rigidbody2D>().velocity = transform.up * castSpeed;
         bobberManager.transform.up = transform.up;
