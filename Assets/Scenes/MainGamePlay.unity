@@ -667,7 +667,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.99888253
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -796,7 +796,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.590022, y: -0.04119301}
+  m_Offset: {x: -11.524574, y: 0.5110421}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -807,7 +807,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86969185, y: 12.829765}
+  m_Size: {x: 0.7847328, y: 14.613912}
   m_EdgeRadius: 0
 --- !u!61 &1410672258
 BoxCollider2D:
@@ -841,7 +841,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010677338, y: -6.16}
+  m_Offset: {x: -0.43547392, y: -7.41315}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -852,7 +852,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.658653, y: 0.744812}
+  m_Size: {x: 23.037514, y: 1.0421696}
   m_EdgeRadius: 0
 --- !u!61 &1410672259
 BoxCollider2D:
@@ -886,7 +886,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010677338, y: 6.120636}
+  m_Offset: {x: 0.47783995, y: 7.437505}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -897,7 +897,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.658653, y: 0.744812}
+  m_Size: {x: 22.910072, y: 0.914732}
   m_EdgeRadius: 0
 --- !u!61 &1410672260
 BoxCollider2D:
@@ -931,7 +931,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 10.68, y: -0.04119301}
+  m_Offset: {x: 11.569626, y: -0.5411625}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -942,7 +942,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86969185, y: 12.829765}
+  m_Size: {x: 0.7807274, y: 15.083717}
   m_EdgeRadius: 0
 --- !u!1 &1617309197
 GameObject:
