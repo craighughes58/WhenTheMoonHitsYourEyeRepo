@@ -134,7 +134,7 @@ MonoBehaviour:
   castSound: {fileID: 8300000, guid: 64a01976c6f46674397a4eec80ab90bb, type: 3}
   castSpeed: 17
   fixedRotSpeed: 100
-  torque: 100
+  torque: 75
   maxSpeed: 200
 --- !u!114 &-4081959501093323393
 MonoBehaviour:
