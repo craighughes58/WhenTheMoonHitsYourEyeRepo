@@ -36,6 +36,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private Vector3 _castingPosition;
     [SerializeField] private bool _playStartingAnimation;
 
+    [Header("ENDING EXPLOSIONS")]
+    [SerializeField] private GameObject _explosionParticle;
+    [SerializeField] private AudioClip _explosionSound;
+    [SerializeField] float _timeBetweenExplosions;
+
     #endregion
 
     public delegate void Alert();
@@ -166,6 +171,8 @@ public class GameController : MonoBehaviour
     private IEnumerator LosingCoroutine()
     {
         StopCoroutine(_coreGameLoop);
+        HorrorBehaviour.Instance.ActivateRoar();
+        ScreenShaker.shakeDuration = 1f;
         //wait
         yield return new WaitForSeconds(2f);
         //move camera to lose position
@@ -174,13 +181,21 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         playerAnimator.SetTrigger("Crying");
+
+        yield return new WaitForSeconds(2);
         //The horror Consumes the Moon
         HorrorBehaviour.Instance.StartLaunch(true);
-        //wait
-        yield return new WaitForSeconds(5f);
-        //Fade to black
         //Wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
+        float explosionTime = 3;
+        while(explosionTime > 0)
+        {
+            explosionTime -= _timeBetweenExplosions;
+            Destroy(Instantiate(_explosionParticle, new Vector3(Random.Range(-10f, 10f), Random.Range(-5f, -3f), -3), Quaternion.identity), 5);
+            AudioManager.Instance.PlayClip2D(_explosionSound);
+            ScreenShaker.shakeDuration = _timeBetweenExplosions / 2;
+            yield return new WaitForSeconds(_timeBetweenExplosions);
+        }
         //Change scene
         SceneManager.LoadScene("LossCrawl");
         yield return null;

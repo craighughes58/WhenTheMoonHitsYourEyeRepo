@@ -17,7 +17,7 @@ public class StarEater : MonoBehaviour
             Vector3 spawnPos = collision.transform.position;
 
             Destroy(Instantiate(explodeStars, collision.transform.position, Quaternion.identity), 5);
-            AudioSource source = AudioManager.Instance.PlayClip2D(_explodeSFX);
+            AudioManager.Instance.PlayClip2D(_explodeSFX);
             Destroy(collision.gameObject);
         }
     }

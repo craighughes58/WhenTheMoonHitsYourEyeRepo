@@ -495,6 +495,9 @@ MonoBehaviour:
   _lossPosition: {x: 0, y: 0, z: -10}
   _castingPosition: {x: 0, y: 0, z: -10}
   _playStartingAnimation: 1
+  _explosionParticle: {fileID: 2594914540892794376, guid: 9c07fd3d19b35244285983bb0fc149c6, type: 3}
+  _explosionSound: {fileID: 8300000, guid: b0e33c0d14ca1924ea3b7595bdada314, type: 3}
+  _timeBetweenExplosions: 0.1
 --- !u!4 &1139497338
 Transform:
   m_ObjectHideFlags: 0
