@@ -149,7 +149,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.011
+  m_Radius: 0.008
 --- !u!114 &-2781691486756630960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,9 +165,9 @@ MonoBehaviour:
   Name: Moving Star
   starRadius: 0.5
   gc: {fileID: 0}
-  speed: 150
+  speed: 100
   destination: {fileID: 0}
-  _maximumMovementRange: 3
+  _maximumMovementRange: 4
   travelPoints: []
   platrb: {fileID: 0}
   moving: 1

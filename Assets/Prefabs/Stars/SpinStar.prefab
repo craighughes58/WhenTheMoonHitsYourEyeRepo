@@ -160,6 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: rotate star
-  starRadius: 1
+  starRadius: 0.75
   gc: {fileID: 0}
   playerOnStar: 0

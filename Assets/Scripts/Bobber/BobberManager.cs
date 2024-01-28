@@ -56,7 +56,7 @@ public class BobberManager : MonoBehaviour
         }
         if (other.tag.Equals("MainCamera"))
         {
-            if (transform.position == new Vector3(3, 10, 0)) return;
+            if (transform.position == new Vector3(2.9f, 10, 0)) return;
             //print("globes");
             Instantiate(_explosionParticles, transform.position, new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + 180f, transform.rotation.w));
             StartCoroutine(ReturnToLastPosition());

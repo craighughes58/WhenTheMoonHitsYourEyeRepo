@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 161874588}
   m_LocalRotation: {x: 0.0027433918, y: 0.073796414, z: 0.03704804, w: 0.9965812}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
+  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 376273146}
   m_LocalEulerAnglesHint: {x: 0, y: 8.47, z: 4.258}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214.11, y: -88.08}
+  m_AnchoredPosition: {x: -566.5, y: -223.3}
   m_SizeDelta: {x: 198.963, y: 25.2989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161874590
@@ -1140,7 +1140,7 @@ Camera:
     x: 0
     y: 0
     width: 1
-    height: 1.0006076
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

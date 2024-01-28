@@ -111,7 +111,7 @@ public class HorrorBehaviour : MonoBehaviour
         }
     }
 
-    public void StartLaunch(bool lose = false)
+    public void StartLaunch(bool lose)
     {
         AudioManager.Instance.PlayClip2D(_roar);
         StartCoroutine(LaunchIntoSpace(lose));
@@ -129,7 +129,6 @@ public class HorrorBehaviour : MonoBehaviour
         {
             _target = 2000000f;
         }
-        if (lose) _speed *= -1;
         while (true)
         {
             yield return new WaitForEndOfFrame();

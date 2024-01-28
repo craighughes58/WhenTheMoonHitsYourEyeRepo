@@ -132,10 +132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castSound: {fileID: 8300000, guid: 64a01976c6f46674397a4eec80ab90bb, type: 3}
-  castSpeed: 10
+  castSpeed: 17
   fixedRotSpeed: 100
-  torque: 50
-  maxSpeed: 100
+  torque: 100
+  maxSpeed: 200
 --- !u!114 &-4081959501093323393
 MonoBehaviour:
   m_ObjectHideFlags: 0

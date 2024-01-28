@@ -142,7 +142,7 @@ public class GameController : MonoBehaviour
         //wait 
         yield return new WaitForSeconds(2f);
         //Launch horror away
-        HorrorBehaviour.Instance.StartLaunch();
+        HorrorBehaviour.Instance.StartLaunch(false);
         //wait
         yield return new WaitForSeconds(3f);
         //Fade to black 
@@ -152,8 +152,7 @@ public class GameController : MonoBehaviour
         playerAnimator.Play("Happy");
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("WinCrawl");
-        /*        print("dfk.juhgkjdfhg");
-                FaderBehaviour.Instance.ChangeVignette();*/
+
 
         //change scene
         yield return null;
