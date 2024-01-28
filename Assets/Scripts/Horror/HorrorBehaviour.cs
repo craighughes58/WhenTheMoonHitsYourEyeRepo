@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class HorrorBehaviour : MonoBehaviour
 {
@@ -48,7 +50,7 @@ public class HorrorBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(transform.position !=_positionNodes[_currentPosition])
+        if(_currentPosition < _positionNodes.Count && transform.position !=_positionNodes[_currentPosition])
         {
             transform.position = Vector3.MoveTowards(transform.position, _positionNodes[_currentPosition],_speed);
         }
@@ -81,9 +83,10 @@ public class HorrorBehaviour : MonoBehaviour
         _currentPosition++;
 
         //Win Condition
-        if (_currentPosition == _positionNodes.Count)
+        if (_currentPosition >= _positionNodes.Count)
         {
             GameController.Instance.LoseGame();
+            Debug.LogWarning("You losea da game");
             //LOSE conditions
         }
     }
@@ -97,14 +100,15 @@ public class HorrorBehaviour : MonoBehaviour
         }
     }
 
-    public void StartLaunch()
+    public void StartLaunch(bool lose = false)
     {
         AudioManager.Instance.PlayClip2D(_roar);
-        LaunchIntoSpace();
+        StartCoroutine(LaunchIntoSpace(lose));
     }
 
-    private IEnumerator LaunchIntoSpace()
+    private IEnumerator LaunchIntoSpace(bool lose)
     {
+        if (lose) _speed *= -1;
         while (true)
         {
             yield return new WaitForSeconds(.1f);
@@ -122,7 +126,8 @@ public class HorrorBehaviour : MonoBehaviour
 
     public Vector3 GetCurrentPosition()
     {
-        return _positionNodes[_currentPosition];
+        if (_currentPosition < _positionNodes.Count) return _positionNodes[_currentPosition];
+        else return transform.position;
     }
 
     public int GetIndex()

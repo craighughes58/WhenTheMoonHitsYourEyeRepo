@@ -41,7 +41,9 @@ public class BobberManager : MonoBehaviour
         }
         if (other.tag.Equals("MainCamera"))
         {
+            if (transform.position == new Vector3(3, 10, 0)) return;
             StartCoroutine(ReturnToLastPosition());
+            GetComponent<Collider2D>().enabled = false;
             return;
 
         }

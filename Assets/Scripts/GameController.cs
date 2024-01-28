@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class GameController : MonoBehaviour
     public Alert onRoundEnd;
 
     public static GameController Instance;
-
+    Coroutine _coreGameLoop;
 
     private void Awake()
     {
@@ -75,7 +76,7 @@ public class GameController : MonoBehaviour
     */
     void Start()
     {
-        StartCoroutine(ExecuteCoreLoop());
+       _coreGameLoop = StartCoroutine(ExecuteCoreLoop());
     }
 
     private IEnumerator ExecuteCoreLoop()
@@ -128,7 +129,7 @@ public class GameController : MonoBehaviour
         Destroy(_currentPlayer);
         onRoundEnd?.Invoke();
 
-        StartCoroutine(ExecuteCoreLoop());
+        _coreGameLoop = StartCoroutine(ExecuteCoreLoop());
     }
 
 
@@ -166,19 +167,24 @@ public class GameController : MonoBehaviour
 
     private IEnumerator LosingCoroutine()
     {
+        StopCoroutine(_coreGameLoop);
         //wait
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(2f);
         //move camera to lose position
         CameraController.Instance.UpdatePosition(_lossPosition,false);
         //wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
+
+        playerAnimator.SetTrigger("Crying");
         //The horror Consumes the Moon
+        HorrorBehaviour.Instance.StartLaunch(true);
         //wait
         yield return new WaitForSeconds(5f);
         //Fade to black
         //Wait
         yield return new WaitForSeconds(5f);
         //Change scene
+        SceneManager.LoadScene("LossCrawl");
         yield return null;
     }
 
