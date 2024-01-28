@@ -106,6 +106,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
         _currentPlayer = Instantiate(_player,_playerStartingPosition,Quaternion.identity);
         yield return null;
+        CastController.Instance.transform.GetChild(0).transform.position = new Vector3(3, 9);
         CastController.Instance.OnFire(null);
         CastController.shootLock = true;
         yield return new WaitForSeconds(2f);
