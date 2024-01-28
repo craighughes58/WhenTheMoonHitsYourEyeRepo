@@ -5,11 +5,12 @@ using UnityEngine.InputSystem;
 
 public class CastController : MonoBehaviour
 {
-    [SerializeField] float castSpeed, rotSpeed;
+    [SerializeField] float castSpeed, fixedRotSpeed, torque, maxSpeed;
     BobberManager bobberManager;
     float rotDir;
     Transform transChild;
     bool rotLocked;
+    Rigidbody2D rb;
 
     public static CastController Instance;
     private void Awake()
@@ -19,6 +20,11 @@ public class CastController : MonoBehaviour
         {
             Instance = this;
         }
+    }
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
@@ -48,13 +54,20 @@ public class CastController : MonoBehaviour
         rotDir = value.Get<float>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        if(rotLocked)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + (-rotDir * fixedRotSpeed * Time.fixedDeltaTime));
+            return;
+        }
         if(rotDir != 0)
         {
-            transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + (-rotDir * rotSpeed * Time.deltaTime));
+            rb.AddTorque(-rotDir * torque * Time.fixedDeltaTime);
+            rb.angularVelocity = Mathf.Clamp(rb.angularVelocity, -maxSpeed, maxSpeed);
         }
     }
+
 
     public void ForceRotDir(int dir)
     {
