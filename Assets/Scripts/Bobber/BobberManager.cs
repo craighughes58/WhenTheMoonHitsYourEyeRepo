@@ -7,9 +7,16 @@ public class BobberManager : MonoBehaviour
     [SerializeField] GameObject castPointer;
     Rigidbody2D rb;
 
+    [SerializeField] AudioManager _audioM;
 
     [Tooltip("The sound made when the bobber fails")]
     [SerializeField] private AudioClip _failedCastSound;
+
+    [Tooltip("The sound made when the bobber is cast")]
+    [SerializeField] private AudioClip _castSound;
+
+    [Tooltip("The sound made when the bobber hits a star")]
+    [SerializeField] private AudioClip _hitStar;
 
     //the last viable position of the player
     private Vector3 _lastPosition;
@@ -20,6 +27,8 @@ public class BobberManager : MonoBehaviour
 
     private void Awake()
     {
+        _audioM = FindObjectOfType<AudioManager>();
+
         rb = GetComponent<Rigidbody2D>();
         StartCast();
     }
@@ -27,6 +36,9 @@ public class BobberManager : MonoBehaviour
     void StartCast(float pointerDist = .45f)
     {
         if (_hasFailed) return;
+
+        
+
         CastController cast = Instantiate(castPointer).GetComponent<CastController>();
         cast.transform.position = transform.position;
         cast.SetPlayer(this, pointerDist);
@@ -54,6 +66,8 @@ public class BobberManager : MonoBehaviour
         hookableObj.Hook(this);
         Star star = other.GetComponent<Star>();
         if (star == null) return;
+
+        _audioM.PlayClip2D(_hitStar);
 
         transform.position = star.transform.position;
         CameraController.Instance.UpdatePosition(transform.position,true);

@@ -133,7 +133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castPointer: {fileID: 3219623476043404085, guid: a24dc20bd73f3404191861ce04e09a50, type: 3}
+  _audioM: {fileID: 0}
   _failedCastSound: {fileID: 8300000, guid: 82e24e1cb539b4e478eb1d4549f64c9b, type: 3}
+  _castSound: {fileID: 8300000, guid: 64a01976c6f46674397a4eec80ab90bb, type: 3}
+  _hitStar: {fileID: 8300000, guid: 6b81cc55d2bf69341b337eacc108e75d, type: 3}
 --- !u!50 &8956349774371305994
 Rigidbody2D:
   serializedVersion: 4
