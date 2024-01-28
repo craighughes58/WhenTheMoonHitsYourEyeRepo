@@ -125,7 +125,7 @@ public class HorrorBehaviour : MonoBehaviour
         if (lose) _speed *= -1;
         while (true)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForEndOfFrame();
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(0f,2000000f,0f), _speed);
         }
     }
