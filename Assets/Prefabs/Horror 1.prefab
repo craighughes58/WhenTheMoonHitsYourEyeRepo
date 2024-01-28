@@ -90,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.29, y: 3.96}
+  m_Size: {x: 20.1, y: 5.4}
   m_EdgeRadius: 0
 --- !u!50 &5099397523022866762
 Rigidbody2D:
@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &2881673975914189028
 GameObject:
   m_ObjectHideFlags: 0
