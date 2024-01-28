@@ -61,6 +61,8 @@ MonoBehaviour:
   - {fileID: 7776374497763251811}
   - {fileID: 3340005708935287905}
   _speed: 0.35
+  zaneMouthAnimator: {fileID: 5643138069650753766}
+  addyMouthAnimator: {fileID: 1137560657664590344}
 --- !u!1 &3340005708935287905
 GameObject:
   m_ObjectHideFlags: 0

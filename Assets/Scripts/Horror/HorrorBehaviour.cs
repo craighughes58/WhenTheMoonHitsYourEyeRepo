@@ -30,6 +30,9 @@ public class HorrorBehaviour : MonoBehaviour
     #endregion
     public static HorrorBehaviour Instance;
 
+    [SerializeField] Animator zaneMouthAnimator;
+    [SerializeField] Animator addyMouthAnimator;
+
     private void Awake()
     {
         if (Instance == null)
@@ -73,6 +76,16 @@ public class HorrorBehaviour : MonoBehaviour
     public void ActivateRoar()
     {
         AudioManager.Instance.PlayClip2D(_roar);
+        zaneMouthAnimator.SetBool("isRoaring", true);
+        addyMouthAnimator.SetBool("isRoaring", true);
+        StartCoroutine(StopRoar());
+    }
+
+    IEnumerator StopRoar()
+    {
+        yield return new WaitForSeconds(_roar.length);
+        zaneMouthAnimator.SetBool("isRoaring", false);
+        addyMouthAnimator.SetBool("isRoaring", false);
     }
 
     #region Movement
