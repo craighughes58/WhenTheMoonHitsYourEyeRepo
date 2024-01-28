@@ -30,7 +30,7 @@ public class CrumblingStar : Star
             timer += Time.deltaTime;
 
             _anim.speed = timer * timer + shakeAdder;
-            Debug.Log(_anim.speed);
+            //Debug.Log(_anim.speed);
 
             yield return null;
         }

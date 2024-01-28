@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hittable
   - GameSpace
+  - Star
   layers:
   - Default
   - TransparentFX
