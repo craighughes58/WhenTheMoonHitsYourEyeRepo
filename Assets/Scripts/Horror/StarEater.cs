@@ -9,7 +9,7 @@ public class StarEater : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("ate " + collision.gameObject.name);
+        //Debug.Log("ate " + collision.gameObject.name);
 
         if (collision.gameObject.tag == "Star")
         {
