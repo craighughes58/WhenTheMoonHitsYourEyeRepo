@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CrumblingStar : Star
 {
+    public AudioManager _audio;
+    public AudioClip explode;
+
     public float timeBeforeCrumble = 3f;
     public float shakeAdder = 1;
 
@@ -13,6 +16,11 @@ public class CrumblingStar : Star
 
     public Animator _anim;
     public float timer;
+
+    private void Start()
+    {
+        _audio = FindObjectOfType<AudioManager>();
+    }
 
     public override void Hook(BobberManager bobber)
     {
@@ -36,6 +44,9 @@ public class CrumblingStar : Star
         }
         //yield return new WaitForSeconds(timeBeforeCrumble);
 
+
+        _audio.PlayClip2D(explode);
+        
         gc.NotifyCastFailure();
         Instantiate(_particles,transform.position,Quaternion.identity);
         if(_player!= null)

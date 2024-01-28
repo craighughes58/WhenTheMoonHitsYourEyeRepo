@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ec808e86df8f84e99f1394ff6788f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castSound: {fileID: 8300000, guid: 64a01976c6f46674397a4eec80ab90bb, type: 3}
   castSpeed: 10
   fixedRotSpeed: 100
   torque: 50

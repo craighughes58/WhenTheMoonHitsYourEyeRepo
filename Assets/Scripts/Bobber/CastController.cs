@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class CastController : MonoBehaviour
 {
+    public AudioClip castSound;
+
     [SerializeField] float castSpeed, fixedRotSpeed, torque, maxSpeed;
     BobberManager bobberManager;
     float rotDir;
@@ -43,6 +45,9 @@ public class CastController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        AudioManager.Instance.PlayClip2D(castSound);
+
         bobberManager.transform.position = transChild.position;
         bobberManager.GetComponent<Rigidbody2D>().velocity = transform.up * castSpeed;
         bobberManager.transform.up = transform.up;
