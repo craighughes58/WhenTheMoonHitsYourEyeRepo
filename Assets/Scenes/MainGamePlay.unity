@@ -1053,6 +1053,134 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7807274, y: 15.083717}
   m_EdgeRadius: 0
+--- !u!1 &1534457965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534457967}
+  - component: {fileID: 1534457966}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1534457966
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534457965}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 71014b9ea721c3c478cb1e684d6839ee, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1534457967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534457965}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.450184, y: -5.977965, z: -0.32261208}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617309197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1568,22 @@ PrefabInstance:
       propertyPath: _blood
       value: 
       objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
+    - target: {fileID: 3349922711043996307, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349922711043996307, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.b
+      value: 0.7149755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349922711043996307, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.g
+      value: 0.36078426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349922711043996307, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.r
+      value: 0.99215686
+      objectReference: {fileID: 0}
     - target: {fileID: 4451440872013872304, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
       propertyPath: m_Name
       value: Eye
@@ -1448,6 +1592,22 @@ PrefabInstance:
       propertyPath: _blood
       value: 
       objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
+    - target: {fileID: 7116008637551901333, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116008637551901333, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.b
+      value: 0.7149755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116008637551901333, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.g
+      value: 0.36078426
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116008637551901333, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.r
+      value: 0.99215686
+      objectReference: {fileID: 0}
     - target: {fileID: 7189653717435938330, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
       propertyPath: _speed
       value: 0.35
@@ -1460,6 +1620,22 @@ PrefabInstance:
       propertyPath: _blood
       value: 
       objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
+    - target: {fileID: 8313334575341594632, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313334575341594632, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.b
+      value: 0.7149755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313334575341594632, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.g
+      value: 0.36078426
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313334575341594632, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _hurtColor.r
+      value: 0.99215686
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1649,3 +1825,4 @@ SceneRoots:
   - {fileID: 1629054000}
   - {fileID: 1109941347}
   - {fileID: 2061046289}
+  - {fileID: 1534457967}

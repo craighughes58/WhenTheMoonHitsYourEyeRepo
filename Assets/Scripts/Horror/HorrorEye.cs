@@ -8,6 +8,7 @@ public class HorrorEye : MonoBehaviour, IHookable
     [Tooltip("The visual that the eye is hit")]
     [SerializeField] private Sprite _closed;
     [SerializeField] private GameObject _blood;
+    [SerializeField] private Color _hurtColor;
 
     #endregion
     #region Private Variable
@@ -29,6 +30,8 @@ public class HorrorEye : MonoBehaviour, IHookable
         if(_spriteRenderer.sprite != _closed)
         {
             bobber.GetComponent<Collider2D>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            _spriteRenderer.color = _hurtColor;
             _animator.SetBool("isHurt", true);
             //_spriteRenderer.sprite = _closed;
 
