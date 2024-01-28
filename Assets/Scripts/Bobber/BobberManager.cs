@@ -11,6 +11,8 @@ public class BobberManager : MonoBehaviour
     [Tooltip("The sound made when the bobber fails")]
     [SerializeField] private AudioClip _failedCastSound;
 
+    [Tooltip("The particles that appear when the bobber hits the wall")]
+    [SerializeField] private GameObject _explosionParticles;
     //the last viable position of the player
     private Vector3 _lastPosition;
 
@@ -42,6 +44,8 @@ public class BobberManager : MonoBehaviour
         if (other.tag.Equals("MainCamera"))
         {
             if (transform.position == new Vector3(3, 10, 0)) return;
+            //print("globes");
+            Instantiate(_explosionParticles, transform.position, new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + 180f, transform.rotation.w));
             StartCoroutine(ReturnToLastPosition());
             GetComponent<Collider2D>().enabled = false;
             return;
