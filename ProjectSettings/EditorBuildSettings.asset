@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpeningText.unity
     guid: 6046925b5058dac4b958406a81a84fc9
+  - enabled: 1
+    path: Assets/Scenes/WinCrawl.unity
+    guid: 8b897cd307432e04c8ee9d53327ef277
+  - enabled: 1
+    path: Assets/Scenes/LossCrawl.unity
+    guid: db8a25a263c0c8e45b94eeebc6c40857
   m_configObjects: {}
