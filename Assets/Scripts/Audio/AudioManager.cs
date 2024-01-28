@@ -33,6 +33,11 @@ public class AudioManager : MonoBehaviour
     /// <returns>The source spawned to play the sound.</returns>
     public AudioSource PlayClip2D(AudioClip clip, AudioMixerGroup mixerGroup = null)
     {
+        if(clip == null)
+        {
+            Debug.LogWarning("NO CLIP WAS ASSIGNED!!");
+            return null;
+        }
         AudioSource source = Instantiate(source2D, Vector3.zero, Quaternion.identity)
                             .GetComponent<AudioSource>();
         SetupAudioSource(ref source, clip);

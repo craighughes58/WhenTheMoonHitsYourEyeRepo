@@ -5,7 +5,7 @@ using UnityEngine;
 public class StarEater : MonoBehaviour
 {
     public ParticleSystem explodeStars;
-
+    [SerializeField] AudioClip _explodeSFX;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,8 +16,8 @@ public class StarEater : MonoBehaviour
             
             Vector3 spawnPos = collision.transform.position;
 
-            Instantiate(explodeStars, collision.transform.position, Quaternion.identity);
-
+            Destroy(Instantiate(explodeStars, collision.transform.position, Quaternion.identity), 5);
+            AudioSource source = AudioManager.Instance.PlayClip2D(_explodeSFX);
             Destroy(collision.gameObject);
         }
     }

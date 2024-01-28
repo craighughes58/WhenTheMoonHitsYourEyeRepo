@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class CastController : MonoBehaviour
 {
+    [HideInInspector]
     public AudioClip castSound;
 
     [SerializeField] float castSpeed, fixedRotSpeed, torque, maxSpeed;
@@ -42,6 +43,8 @@ public class CastController : MonoBehaviour
         if (shootLock) return;
         if(bobberManager == null)
         {
+            Debug.Log("Bobber was null :(", gameObject);
+            Debug.Break();
             Destroy(gameObject);
             return;
         }

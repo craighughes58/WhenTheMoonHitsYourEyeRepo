@@ -165,7 +165,7 @@ MonoBehaviour:
   Name: Moving Star
   starRadius: 0.5
   gc: {fileID: 0}
-  speed: 300
+  speed: 150
   destination: {fileID: 0}
   _maximumMovementRange: 3
   travelPoints: []

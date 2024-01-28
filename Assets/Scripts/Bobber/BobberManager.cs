@@ -44,6 +44,7 @@ public class BobberManager : MonoBehaviour
         CastController cast = Instantiate(castPointer).GetComponent<CastController>();
         cast.transform.position = transform.position;
         cast.SetPlayer(this, pointerDist);
+        cast.castSound = _castSound;
 
     }
 

@@ -67,7 +67,6 @@ public class HorrorBehaviour : MonoBehaviour
         {
             GameController.Instance.WinGame();
             //WIN condition
-            Debug.LogWarning("You should be winning the game here, but it's not implemented");
             return;
         }
         GameController.Instance.NotifyCastSuccess();
