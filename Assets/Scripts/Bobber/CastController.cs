@@ -44,9 +44,15 @@ public class CastController : MonoBehaviour
         if(bobberManager == null)
         {
             Debug.Log("Bobber was null :(", gameObject);
-            Debug.Break();
-            Destroy(gameObject);
-            return;
+            bobberManager = FindObjectOfType<BobberManager>();
+            if(bobberManager == null)
+            {
+                print("It was still null");
+                Debug.Break();
+                Destroy(gameObject);
+                return;
+            }
+            print("But the code fixed it");
         }
 
         AudioManager.Instance.PlayClip2D(castSound);

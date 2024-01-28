@@ -108,7 +108,6 @@ public class GameController : MonoBehaviour
         yield return null;
         CastController.Instance.transform.GetChild(0).transform.position = new Vector3(3, 9);
         CastController.Instance.OnFire(null);
-        print(CastController.Instance.gameObject);
         CastController.shootLock = true;
         yield return new WaitForSeconds(2f);
         CastController.shootLock = false;

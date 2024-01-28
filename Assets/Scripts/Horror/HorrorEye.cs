@@ -7,7 +7,7 @@ public class HorrorEye : MonoBehaviour, IHookable
     #region Serialized Variable
     [Tooltip("The visual that the eye is hit")]
     [SerializeField] private Sprite _closed;
-    [SerializeField] private ParticleSystem _blood;
+    [SerializeField] private GameObject _blood;
 
     #endregion
     #region Private Variable
@@ -32,7 +32,8 @@ public class HorrorEye : MonoBehaviour, IHookable
             _animator.SetBool("isHurt", true);
             //_spriteRenderer.sprite = _closed;
 
-            Instantiate(_blood, transform);
+            GameObject _bloodEffect = Instantiate(_blood, transform);
+            _bloodEffect.transform.localPosition = Vector3.zero;
 
             HorrorBehaviour.Instance.LoseEye();
 

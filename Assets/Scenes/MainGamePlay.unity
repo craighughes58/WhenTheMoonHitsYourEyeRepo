@@ -1247,9 +1247,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0038226303
+    y: 0
     width: 1
-    height: 0.99245036
+    height: 0.9925926
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -1429,10 +1429,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Horror 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3340005708935287905, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: m_Name
+      value: Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349922711043996307, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _blood
+      value: 
+      objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
+    - target: {fileID: 4451440872013872304, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: m_Name
+      value: Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116008637551901333, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _blood
+      value: 
+      objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
     - target: {fileID: 7189653717435938330, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
       propertyPath: _speed
       value: 0.35
       objectReference: {fileID: 0}
+    - target: {fileID: 7776374497763251811, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: m_Name
+      value: Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313334575341594632, guid: 6c0cce5fc9f6d2c4ba8bfbf5be27c120, type: 3}
+      propertyPath: _blood
+      value: 
+      objectReference: {fileID: 9085830596592352414, guid: 29981050121e3d34e86ae0dc24d91654, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
