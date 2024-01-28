@@ -154,5 +154,8 @@ MonoBehaviour:
   Name: Breaking Star
   starRadius: 0.5
   gc: {fileID: 0}
-  timeBeforeCrumble: 3
-  _particles: {fileID: 0}
+  timeBeforeCrumble: 5
+  shakeAdder: 10
+  _particles: {fileID: 2594914540892794376, guid: 9c07fd3d19b35244285983bb0fc149c6, type: 3}
+  _anim: {fileID: 0}
+  timer: 0
