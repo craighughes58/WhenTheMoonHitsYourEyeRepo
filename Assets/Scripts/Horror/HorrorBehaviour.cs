@@ -99,7 +99,6 @@ public class HorrorBehaviour : MonoBehaviour
         if (_currentPosition >= _positionNodes.Count)
         {
             GameController.Instance.LoseGame();
-            Debug.LogWarning("You losea da game");
             //LOSE conditions
         }
     }
@@ -122,11 +121,20 @@ public class HorrorBehaviour : MonoBehaviour
     private IEnumerator LaunchIntoSpace(bool lose)
     {
         _health = 0;
+        float _target;
+        if (lose)
+        {
+            _target = -1.62f;
+        }
+        else
+        {
+            _target = 2000000f;
+        }
         if (lose) _speed *= -1;
         while (true)
         {
             yield return new WaitForEndOfFrame();
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(0f,2000000f,0f), _speed);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(0f,_target,0f), _speed);
         }
     }
     #endregion
