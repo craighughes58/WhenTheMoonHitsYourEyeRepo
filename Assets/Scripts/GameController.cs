@@ -57,26 +57,10 @@ public class GameController : MonoBehaviour
         GetComponent<StarSpawner>().SpawnAllStars();
 
     }
-    
-
-    /*    private float NewMethod()
-        {
-            float sizeX = gameSpace.GetComponent<BoxCollider2D>().size.x;
-            float sizeY = gameSpace.GetComponent<BoxCollider2D>().size.y;
-
-            float leftLoc = -sizeX / 2;
-            float rightLoc = sizeX / 2;
-            float topLoc = sizeY / 2;
-            float bottomLoc = -sizeY / 2;
-
-            upperRightCorner = new Vector2(rightLoc, topLoc);
-            lowerLeftCorner = new Vector2(leftLoc, bottomLoc);
-            return bottomLoc;
-        }
-    */
+   
     void Start()
     {
-       _coreGameLoop = StartCoroutine(ExecuteCoreLoop());
+        _coreGameLoop = StartCoroutine(ExecuteCoreLoop());
     }
 
     private IEnumerator ExecuteCoreLoop()
@@ -112,7 +96,7 @@ public class GameController : MonoBehaviour
         //pan to show player
         CameraController.Instance.UpdatePosition(_castingPosition,false);
         //wait
-        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration() + 2f);
+        yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
 
         //player cast
         playerAnimator.SetTrigger("Cast");
@@ -145,17 +129,25 @@ public class GameController : MonoBehaviour
 
     private IEnumerator WinningCoroutine()
     {
+        StopCoroutine(_coreGameLoop);
         //Move Camera to Win Position
         CameraController.Instance.UpdatePosition(HorrorBehaviour.Instance.GetCurrentPosition(),false);
         //wait 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(2f);
         //Launch horror away
         HorrorBehaviour.Instance.StartLaunch();
         //wait
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         //Fade to black 
+        CameraController.Instance.UpdatePosition(_castingPosition, false);
         //wait 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2.5f);
+        playerAnimator.Play("Happy");
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("WinCrawl");
+        /*        print("dfk.juhgkjdfhg");
+                FaderBehaviour.Instance.ChangeVignette();*/
+
         //change scene
         yield return null;
     }

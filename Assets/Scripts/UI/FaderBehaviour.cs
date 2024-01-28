@@ -25,8 +25,19 @@ public class FaderBehaviour : MonoBehaviour
     [Tooltip("The reference to the menu controller in the scene")]
     [SerializeField] private MainMenuController _menCon;
 
+
+    public static FaderBehaviour Instance;
     #endregion
     #endregion
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

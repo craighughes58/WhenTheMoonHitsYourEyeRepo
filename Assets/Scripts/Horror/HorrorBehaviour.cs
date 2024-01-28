@@ -53,7 +53,7 @@ public class HorrorBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(_currentPosition < _positionNodes.Count && transform.position !=_positionNodes[_currentPosition])
+        if(_currentPosition < _positionNodes.Count && transform.position !=_positionNodes[_currentPosition] && _health > 0)
         {
             transform.position = Vector3.MoveTowards(transform.position, _positionNodes[_currentPosition],_speed);
         }
@@ -121,6 +121,7 @@ public class HorrorBehaviour : MonoBehaviour
 
     private IEnumerator LaunchIntoSpace(bool lose)
     {
+        _health = 0;
         if (lose) _speed *= -1;
         while (true)
         {

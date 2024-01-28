@@ -162,7 +162,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "After 10,000 years of failure, Glorbulox reins victorious. The moon was
-    only the beginning. The universe shall cower before it. \n\n\n"
+    only the beginning. The universe shall cower before Glorbulox! \n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9481272a5017dad44a02f94bd86d534e, type: 2}
   m_sharedMaterial: {fileID: 3061850419812465513, guid: 9481272a5017dad44a02f94bd86d534e, type: 2}
