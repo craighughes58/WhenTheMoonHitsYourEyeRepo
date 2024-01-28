@@ -13,6 +13,7 @@ public class CastController : MonoBehaviour
     Rigidbody2D rb;
 
     public static CastController Instance;
+    public static bool shootLock;
     private void Awake()
     {
         transChild = transform.GetChild(0).transform;
@@ -36,6 +37,7 @@ public class CastController : MonoBehaviour
 
     public void OnFire(InputValue value)
     {
+        if (shootLock) return;
         if(bobberManager == null)
         {
             Destroy(gameObject);

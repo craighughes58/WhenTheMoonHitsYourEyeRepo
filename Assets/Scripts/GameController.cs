@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
@@ -104,7 +105,12 @@ public class GameController : MonoBehaviour
         //wait
         yield return new WaitForSeconds(CameraController.Instance.GetDesiredDuration());
         _currentPlayer = Instantiate(_player,_playerStartingPosition,Quaternion.identity);
+        yield return null;
         CastController.Instance.OnFire(null);
+        CastController.shootLock = true;
+        yield return new WaitForSeconds(2f);
+        CastController.shootLock = false;
+
         //WAIT UNTIL FAILURE
         yield return new WaitUntil(() => _failedCast || _successfulCast);
         playerAnimator.SetTrigger("Idle");
