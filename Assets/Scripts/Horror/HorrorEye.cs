@@ -23,10 +23,11 @@ public class HorrorEye : MonoBehaviour, IHookable
 
     }
 
-    public void Hook(BobberManager boober)
+    public void Hook(BobberManager bobber)
     {
         if(_spriteRenderer.sprite != _closed)
         {
+            bobber.GetComponent<Collider2D>().enabled = false;
             _animator.SetBool("isHurt", true);
             //_spriteRenderer.sprite = _closed;
             
