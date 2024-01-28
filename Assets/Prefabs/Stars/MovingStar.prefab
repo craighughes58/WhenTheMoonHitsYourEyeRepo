@@ -161,9 +161,9 @@ MonoBehaviour:
   Name: Moving Star
   starRadius: 0.5
   gc: {fileID: 0}
-  speed: 4
+  speed: 300
   destination: {fileID: 0}
-  _maximumMovementRange: 2
+  _maximumMovementRange: 3
   travelPoints: []
   platrb: {fileID: 0}
   moving: 1
@@ -175,7 +175,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053934326826292768}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
