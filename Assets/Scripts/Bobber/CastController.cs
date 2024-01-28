@@ -20,10 +20,12 @@ public class CastController : MonoBehaviour
     private void Awake()
     {
         transChild = transform.GetChild(0).transform;
-        if(Instance == null)
+        if(Instance != null)
         {
-            Instance = this;
+            Destroy(Instance.gameObject);
         }
+
+        Instance = this;
     }
 
     private void Start()
