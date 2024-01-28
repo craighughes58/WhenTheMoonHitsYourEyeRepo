@@ -142,7 +142,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.030566026
+  m_Radius: 0.015
 --- !u!114 &7715804776510125176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: rotate star
-  starRadius: 0.5
+  starRadius: 1
   gc: {fileID: 0}
   playerOnStar: 0
